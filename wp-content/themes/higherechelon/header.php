@@ -31,6 +31,7 @@
 
 <style>
 
+@import url('https://fonts.googleapis.com/css?family=Martel:400,700|Poppins:400,700,900');
 
 <?php the_field( 'review_css','option'); ?>
 
