@@ -50,9 +50,45 @@
 	
 	<header>
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		<div class="header_left">
+			
+			<a class="" href="<?php bloginfo('url');?>">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/he-Logo.svg"/>
+				
+			</a>
+			
+		</div><!-- header_left -->
+		
+		<div class="header_middle">
+			
+			<nav><?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?></nav>
+			
+			<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', '(256) 945-0091'); ?>">(256) 945-0091</a><!-- phone -->
+			
+		</div><!-- header_middle -->
+		
+		<div class="header_right">
+			
+			<a href="#consultation">
+				
+				<span class="">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/ico-arrow.svg"/>
+					
+				</span>
+				
+				<span class="">Contact Us Today</span>
+				
+			</a>
+			
+		</div><!-- header_right -->
 		
 	</header>
+		
+		
+		
+	
 				
 
 
