@@ -3,6 +3,9 @@ header {
 	height:80px;
 	background:$bluethree;
 	display: flex;
+	position: fixed;
+	top:0;
+	left:0;
 }
 
 
@@ -19,6 +22,25 @@ header {
 		}
 	}
 }
+
+.menu_wrapper {
+	width:35px;
+	display: none;
+	span {
+		display: block;
+		width:29px;
+		height:3px;
+		background: $red;
+		margin-bottom:8px;
+		&:nth-of-type(1), &:nth-of-type(3) {
+			margin-left:6px;
+		}
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+}
+
 
 
 
@@ -91,6 +113,148 @@ header {
 	flex-basis:420px;
 	background:$red;
 	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:100%;
+		text-decoration: none;
+	}
+	span.arrow {
+		width:32px;
+		height:32px;
 		display: block;
+		margin-right:17px;
+		svg {
+			width:32px;
+			height:32px;
+		}
+	}
+	span.contact_us {
+		text-transform: uppercase;
+		color:#fff;
+		font-size:16px;
+		letter-spacing: 0.5em;
+		font-family: $poppins;
+		font-weight:900;
 	}
 }
+
+
+
+@media screen and (max-width: 1670px) {
+	
+	
+.header_left {
+	a {
+		img {
+			width:45px;
+			height:45px;
+			
+		}
+	}
+}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1390px) {
+	
+	
+	.header_left {
+		padding: 0 25px;
+		flex-basis: 142px;
+		flex-shrink: 0;
+		justify-content: space-between;
+		a {
+			img {
+				width:38px;
+				height:38px;
+			}
+		}
+	}
+	
+	
+	
+	.menu_wrapper {
+		display: block;
+	}
+	
+	
+	
+	.header_middle {
+		background:#fff;
+		nav {
+			display: none;
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.header_right {
+		flex-basis:335px;
+		span.contact_us {
+			font-size:16px;
+			letter-spacing: 0.25em;
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 835px) {
+	
+	
+	.header_middle {
+		justify-content: center;
+		padding-right:0;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	
+	header {
+		flex-wrap:wrap;
+		height:auto;
+	}
+	
+	
+	.header_left, .header_middle {
+		height:76px;
+	}
+	
+	.header_right {
+		flex-basis:100%;
+		height: 82px;
+		span.arrow {
+			margin-right: 33px;
+		}
+	}
+	
+	
+	
+	
+	
+} /* Media Query */

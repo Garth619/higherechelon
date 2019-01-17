@@ -54,9 +54,23 @@
 			
 			<a class="" href="<?php bloginfo('url');?>">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/he-Logo.svg"/>
+				<picture>
+					
+					<source media="(max-width: 1670px)" srcset="<?php bloginfo('template_directory'); ?>/images/he-logo-stickynav.svg">
+				
+					<img src="<?php bloginfo('template_directory');?>/images/he-logo.svg"/>
+				
+				</picture>
 				
 			</a>
+			
+			<div class="menu_wrapper">
+				
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				
+			</div><!-- menu_wrapper -->
 			
 		</div><!-- header_left -->
 		
@@ -72,13 +86,13 @@
 			
 			<a href="#consultation">
 				
-				<span class="">
+				<span class="arrow">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/ico-arrow.svg"/>
+					<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
 					
 				</span>
 				
-				<span class="">Contact Us Today</span>
+				<span class="contact_us">Contact Us Today</span><!-- contact_us -->
 				
 			</a>
 			
