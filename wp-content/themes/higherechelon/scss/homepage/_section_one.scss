@@ -141,3 +141,28 @@
 	}
 }
 
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	#section_one {
+		img.hero {
+			object-position:0 0;
+		}
+	}
+	
+	
+	
+	
+	.sec_one_inner {
+		span.sec_one_title {
+			font-size:75px;
+			line-height: 100px;
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */

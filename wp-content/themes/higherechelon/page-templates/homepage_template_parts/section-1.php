@@ -1,6 +1,8 @@
 <section id="section_one">
 	
 		<picture>
+		
+			<source media="(max-width: 1450px)" srcset="<?php bloginfo('template_directory');?>/images/hero-ipad.jpg">
 	
 			<img class="hero" src="<?php bloginfo('template_directory');?>/images/hero.jpg"/>
 
