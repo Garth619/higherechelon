@@ -28,7 +28,7 @@
 				
 			</div><!-- sec_one_col -->
 			
-			<div class="sec_one_col two">
+			<div class="sec_one_col two sec_one_slide">
 				
 				<div class="sec_one_col_inner">
 					
@@ -43,7 +43,7 @@
 			</div><!-- sec_one_col -->
 			
 			
-			<div class="sec_one_col three">
+			<div class="sec_one_col three sec_one_slide">
 				
 				<div class="sec_one_col_inner">
 					
@@ -58,7 +58,7 @@
 			</div><!-- sec_one_col -->
 			
 			
-			<div class="sec_one_col four">
+			<div class="sec_one_col four sec_one_slide">
 				
 				<div class="sec_one_col_inner">
 					

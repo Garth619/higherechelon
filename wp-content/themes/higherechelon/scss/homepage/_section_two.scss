@@ -1,0 +1,189 @@
+#section_two {
+	overflow: hidden;
+}
+
+
+.sec_two_content_top {
+	max-width:1310px;
+	margin:0 auto;
+	height:1000px;
+	display: flex;
+}
+
+
+.sec_two_header_left {
+	flex-basis:642px;
+	flex-shrink:0;
+	margin-top:210px;
+	span {
+		color:$red;
+		font-family: $exo;
+		font-weight:700;
+		font-size:70px;
+		line-height: 95px;
+		display: block;
+	}
+}
+
+.sec_two_content_right {
+	margin-top:376px;
+	padding-left:10%;
+}
+
+
+
+.our_services_wrapper {
+	position: relative;
+	
+	span.blue_line {
+		display: block;
+		width:50%;
+		height:1px;
+		background: $bluelight;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+}
+
+
+span.animated_title {
+	font-family: $poppins;
+	font-weight:900;
+	display: block;
+	font-size:260px;
+	letter-spacing: 0.08em;
+	color:#012349;
+	opacity: 0.05;
+	text-transform: uppercase;
+}
+
+
+span.learn_title {
+	margin-left:-325px;
+}
+
+span.our_services_title {
+	text-transform: uppercase;
+	color:$bluelight;
+	font-family: $poppins;
+	font-weight:900;
+	font-size:20px;
+	letter-spacing: 0.5em;
+	display: block;
+	text-align: right;
+}
+
+
+.our_services_inner {
+	max-width:1405px;
+	margin:0 auto;
+	background:#fff;
+}
+
+
+
+
+
+@media screen and (max-width: 1650px) {
+	
+	
+	
+	
+	.sec_two_content_top {
+		padding-left:144px;
+		padding-right:108px;
+		max-width:100%;
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+.sec_two_header_left {
+	flex-basis: 555px;
+	margin-top: 255px;
+	span {
+		font-size:60px;
+		line-height: 85px;
+	}
+}
+
+
+.sec_two_content_right {
+  padding-left: 5%;
+}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1290px) {
+	
+	
+	.sec_two_content_top {
+		padding-left:99px;
+		padding-right:99px;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 1175px) {
+	
+	.sec_two_content_top {
+		display: block;
+	}
+	
+	.sec_two_header_left {
+		margin-top: 160px;
+	}
+	
+	
+	.sec_two_content_right {
+		padding-left:0;
+		margin-top:49px;
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+
+
+.sec_two_content_top {
+	padding-left:49px;
+	padding-right:49px;
+}
+
+	
+.sec_two_header_left {
+	margin-top: 81px;
+	span {
+		font-size:39px;
+		line-height: 55px;
+	}
+}
+
+
+
+.sec_two_content_right {
+	margin-top: 33px;
+}
+	
+	
+	
+	
+	
+} /* Media Query */

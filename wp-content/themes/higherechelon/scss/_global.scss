@@ -36,6 +36,28 @@ h1,h2,h3,h4 {
 
 
 
+.content {
+	font-family: $poppins;
+	color:#000;
+	font-size:17px;
+	line-height: 36px;
+	h2 {
+		font-family: $poppins;
+		color:#000;
+		font-size:26px;
+		line-height: 38px;
+		border-top:7px $red solid;
+		padding-top:26px;
+		padding-bottom:28px;
+		font-weight:700;
+	}
+	p {
+		margin-bottom:38px;
+	}
+}
+
+
+
 svg#arrow {
 	.arrow-st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
 	.arrow-st1{fill:#fff;}
@@ -69,6 +91,36 @@ img.aligncenter {
 	height:auto;
 }
 	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.content {
+		h2 {
+			padding-top: 22px;
+			padding-bottom: 40px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.content {
+		h2 {
+			padding-top: 25px;
+			padding-bottom: 28px;
+		}
+	}
 	
 	
 	

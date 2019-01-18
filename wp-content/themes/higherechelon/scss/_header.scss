@@ -259,3 +259,19 @@ header {
 	
 	
 } /* Media Query */
+
+
+
+
+@media screen and (max-width: 370px) {
+	
+	
+	
+	.header_left {
+		flex-basis: 114px;
+		padding: 0 16px;
+	}
+	
+	
+	
+} /* Media Query */

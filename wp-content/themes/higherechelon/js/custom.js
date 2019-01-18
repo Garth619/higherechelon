@@ -5,7 +5,10 @@
 
 jQuery(document).ready(function($){
 	
-
+	
+	
+	var windowWidth = $(window).width();
+	
 	
 	 /* Modernizr - check if browser supports webp for section_one. 
      --------------------------------------------------------------------------------------- */
@@ -235,42 +238,42 @@ jQuery(document).ready(function($){
 --------------------------------------------------------------------------------------- */
 
 
-/*
-$('.sec_three_slider').slick({
+	function seconeSlider() {
+    
+    if (windowWidth < 768) {
+        
+      
+    	$('.sec_one_slide').wrapAll('<div class="sec_one_slider"></siv');
+    	   		
+    		
+    } 
+    
+    
+        
+};
+	
+
+seconeSlider();
+
+
+
+
+$('.sec_one_slider').slick({
   infinite: true,
-  slidesToShow: 6,
-  slidesToScroll: 6,
-	arrows:true,
-	prevArrow:".arrow_left",
-	nextArrow:".arrow_right",
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	dots:true,
+	fade:true,
+	mobileFirst:true,
 	responsive: [
     {
-      breakpoint: 1450,
-      settings: {
-      slidesToShow: 5,
-      slidesToScroll: 5,
-     }
-   },
-   {
-      breakpoint: 1100,
-      settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots:true,
-     }
-   },
-   {
-      breakpoint: 767,
-      settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots:true,
-     }
-   }
+      breakpoint: 768,
+      settings: "unslick"
+    }
 	]
  });
  
-*/
  
 
 	
