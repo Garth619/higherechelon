@@ -10,7 +10,7 @@
 		
 		<div class="sec_one_inner">
 			
-			<span class="sec_one_title">Helping companies take <strong>organizational performance</strong><br/> to a higher level.</span><!-- sec_one_title -->
+			<span class="sec_one_title">Helping<br class="mobile"/> companies take <strong>organizational performance</strong><br class="desktop"/> to a higher level.</span><!-- sec_one_title -->
 			
 		</div><!-- sec_one_inner -->
 		
