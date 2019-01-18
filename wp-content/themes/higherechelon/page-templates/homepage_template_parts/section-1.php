@@ -10,7 +10,7 @@
 		
 		<div class="sec_one_inner">
 			
-			<span class="sec_one_title">Helping companies take <strong>organizational performance</strong> to a higher level.</span><!-- sec_one_title -->
+			<span class="sec_one_title">Helping companies take <strong>organizational performance</strong><br/> to a higher level.</span><!-- sec_one_title -->
 			
 		</div><!-- sec_one_inner -->
 		
@@ -22,7 +22,7 @@
 					
 					<img src="<?php bloginfo('template_directory');?>/images/he-logo-badge.svg"/>
 					
-					<span class="sec_one_col_content">HigherEchelon, Inc. (HE) is<br/> the premiere trusted partner in organizational excellence.</span><!-- sec_one_col_content -->
+					<span class="sec_one_col_content">HigherEchelon, Inc. (HE)<br class="laptop"/> is<br class="desktop"/> the premiere trusted partner in organizational excellence.</span><!-- sec_one_col_content -->
 					
 				</div><!-- sec_one_col_inner_intro -->
 				
