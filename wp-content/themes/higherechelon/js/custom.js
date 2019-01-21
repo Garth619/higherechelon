@@ -248,12 +248,10 @@ jQuery(document).ready(function($){
     		
     } 
     
-    
-        
-};
+  };
 	
 
-seconeSlider();
+	seconeSlider();
 
 
 
@@ -283,6 +281,41 @@ $('.sec_one_slider').slick({
 
 
 $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
+
+
+
+// Sec Two Boxes Hover
+
+
+function secotwoHover() {
+    
+    if (windowWidth < 1067) {
+	    
+	    
+	    
+	    $('.our_services_single_box').addClass('tablet');
+        
+        
+      $('.our_services_single_box').on('click', function(e) {
+          
+      	
+      	$('.our_services_single_box').removeClass('open');  	
+      	
+      	$(this).addClass('open');  	 	
+      
+      
+      });
+        
+      
+    } 
+    
+    
+        
+};
+
+
+
+secotwoHover();
 
 
   

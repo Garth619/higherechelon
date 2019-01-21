@@ -168,9 +168,11 @@
 							
 						</div><!-- learn_more_wrapper -->
 						
+						</a>
+						
 					</div><!-- services_box_hover -->
 					
-					</a>
+					
 					
 				</div><!-- our_services_single_box -->
 				
