@@ -35,15 +35,7 @@
 .our_services_wrapper {
 	position: relative;
 	
-	span.blue_line {
-		display: block;
-		width:50%;
-		height:1px;
-		background: $bluelight;
-		position: absolute;
-		top:0;
-		right:0;
-	}
+	
 }
 
 
@@ -61,6 +53,7 @@ span.animated_title {
 
 span.learn_title {
 	margin-left:-325px;
+	margin-top:-75px;
 }
 
 span.our_services_title {
@@ -72,16 +65,164 @@ span.our_services_title {
 	letter-spacing: 0.5em;
 	display: block;
 	text-align: right;
+	position: relative;
+	&:after {
+		content:"";
+		display: block;
+		width:100%;
+		height:1px;
+		background: $bluelight;
+		position: absolute;
+		top:9px;
+		right:-101%;
+	
+	}
 }
 
 
 .our_services_inner {
-	max-width:1405px;
-	margin:0 auto;
+	max-width:1415px;
+	margin: -106px auto 0;
 	background:#fff;
 }
 
 
+.our_services_boxes {
+	display: flex;
+	justify-content: space-between;
+	margin:77px 0 0;
+}
+
+
+.our_services_single_box {
+	flex-basis:31.9%;
+	position: relative;
+	transform: translateY(0px);
+	transition: transform 900ms cubic-bezier(.17,.66,.34,.98);
+	&:hover {
+		transform: translateY(-75px);
+		.services_box_reg {
+			.services_bar {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+		.services_box_hover {
+			a {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+
+
+.services_box_reg {
+	position: relative;
+	img {
+		max-width: 100%;
+		height:auto;
+		display: block;
+	}
+	.services_bar {
+		width:100%;
+		height:138px;
+		position: absolute;
+		bottom:0;
+		left:0;
+		background:rgba(20, 27,53, 0.8);
+		display: flex;
+		opacity: 1;
+		visibility: visible;
+		transition: all 200ms ease-in-out;
+		span {
+			flex-grow:1;
+			color:#fff;
+			text-transform: uppercase;
+			font-family: $poppins;
+			font-weight:900;
+			font-size:24px;
+			letter-spacing: 0.4em;
+			padding:55px 0px 0 51px;
+		}
+		.red_bar {
+			flex-basis:85px;
+			flex-shrink:0;
+			background:$red;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			svg {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+
+
+
+.services_box_hover {
+	a {
+		text-decoration: none;
+		display: block;
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:rgba(190,30,45,0.93);
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 350ms ease-in-out;	
+	}
+	span.services_hover_title {
+		color:#fff;
+		font-family: $exo;
+		font-weight:700;
+		font-size:48px;
+		margin-top:126px;
+		display: block;
+		&:after {
+			content:"";
+			width:90px;
+			height:4px;
+			background: #fff;
+			margin:35px auto 0;
+			display: block;
+		}
+	}
+	ul {
+		list-style: none;
+		margin:43px 0 0;
+		li {
+			color:#fff;
+			font-family: $poppins;
+			font-size:18px;
+			line-height: 26px;
+			margin-bottom: 13px;
+		}
+	}
+	.learn_more_wrapper {
+		position: absolute;
+		bottom:78px;
+		left:0;
+		width:100%;
+		span.learn_more {
+			color:#fff;
+			display: inline-block;
+			text-transform: uppercase;
+			font-family: $poppins;
+			font-weight:900;
+			letter-spacing: 0.5em;
+			font-size:16px;
+			border:1px solid #fff;
+			padding:29px 20px;
+		}
+	}
+}
 
 
 

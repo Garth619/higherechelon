@@ -32,11 +32,149 @@
 			
 			<div class="our_services_boxes">
 				
-				<div class="our_services_single_box"></div><!-- our_services_single_box -->
+				<div class="our_services_single_box">
+					
+					<div class="services_box_reg">
+						
+						<img src="<?php bloginfo('template_directory');?>/images/pa-1.jpg"/>
+						
+						<div class="services_bar">
+							
+							<span class="">People</span>
+							
+							<div class="red_bar">
+								
+								<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+								
+							</div><!-- red_bar -->
+							
+						</div><!-- services_bar -->
+						
+					</div><!-- services_box_reg -->
+					
+					<div class="services_box_hover">
+						
+						<a href="">
+						
+						<span class="services_hover_title">People</span><!-- services_hover_title -->
+						
+						<ul class="services_hover_content">
+							
+							<li>Leader development</li>
+							
+							<li>Culture Transformation</li>
+							 
+							<li>Applied High Performance</li>
+							 
+						</ul><!-- services_hover_content -->
+						
+						<div class="learn_more_wrapper">
+							
+							<span class="learn_more">Learn More</span><!-- learn_more -->
+							
+						</div><!-- learn_more_wrapper -->
+						
+						</a>
+						
+					</div><!-- services_box_hover -->
+					
+				</div><!-- our_services_single_box -->
 				
-				<div class="our_services_single_box"></div><!-- our_services_single_box -->
+				<div class="our_services_single_box">
+					
+					<div class="services_box_reg">
+						
+						<img src="<?php bloginfo('template_directory');?>/images/pa-2.jpg"/>
+						
+						<div class="services_bar">
+							
+							<span class="">Process</span>
+							
+							<div class="red_bar">
+								
+								<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+								
+							</div><!-- red_bar -->
+							
+						</div><!-- services_bar -->
+						
+					</div><!-- services_box_reg -->
+					
+					<div class="services_box_hover">
+						
+						<a href="">
+						
+						<span class="services_hover_title">Process</span><!-- services_hover_title -->
+						
+						<ul class="services_hover_content">
+							
+							<li>Agile Development</li>
+							
+							<li>Process Modernization</li>
+							 
+							<li>Training Design +<br/> Effectiveness</li>
+							 
+						</ul><!-- services_hover_content -->
+						
+						<div class="learn_more_wrapper">
+							
+							<span class="learn_more">Learn More</span><!-- learn_more -->
+							
+						</div><!-- learn_more_wrapper -->
+						
+						</a>
+						
+					</div><!-- services_box_hover -->
+					
+				</div><!-- our_services_single_box -->
 				
-				<div class="our_services_single_box"></div><!-- our_services_single_box -->
+				<div class="our_services_single_box">
+					
+					<div class="services_box_reg">
+						
+						<img src="<?php bloginfo('template_directory');?>/images/pa-3.jpg"/>
+						
+						<div class="services_bar">
+							
+							<span class="">Technology</span>
+							
+							<div class="red_bar">
+								
+								<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+								
+							</div><!-- red_bar -->
+							
+						</div><!-- services_bar -->
+						
+					</div><!-- services_box_reg -->
+					
+					<div class="services_box_hover">
+						
+						<a href="">
+						
+						<span class="services_hover_title">Technology</span><!-- services_hover_title -->
+						
+						<ul class="services_hover_content">
+							
+							<li>Salesforce Implementation</li>
+							
+							<li>Educational Gaming + Simulation</li>
+							 
+							<li>Cyber Security</li>
+							 
+						</ul><!-- services_hover_content -->
+						
+						<div class="learn_more_wrapper">
+							
+							<span class="learn_more">Learn More</span><!-- learn_more -->
+							
+						</div><!-- learn_more_wrapper -->
+						
+					</div><!-- services_box_hover -->
+					
+					</a>
+					
+				</div><!-- our_services_single_box -->
 				
 			</div><!-- our_services_boxes -->
 			
