@@ -1,16 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85">
+<svg id="play_button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 85">
   <defs>
     <style>
-      .cls-1 {
-        fill: #be1e2d;
-      }
-
-      .cls-2 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
+      
     </style>
   </defs>
-  <circle id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" class="cls-1" cx="42.516" cy="42.609" r="41.922"/>
-  <path class="cls-2" d="M37.539,30.532l17.78,13.894L37.539,58.321V30.532Z"/>
+  <circle id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" class="play_button-cls-1" cx="42.516" cy="42.609" r="41.922"/>
+  <path class="play_button-cls-2" d="M37.539,30.532l17.78,13.894L37.539,58.321V30.532Z"/>
 </svg>

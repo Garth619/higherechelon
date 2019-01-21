@@ -273,6 +273,18 @@ $('.sec_one_slider').slick({
  });
  
  
+ 
+ 
+ $('.sec_three_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	dots:true,
+	fade:true
+ });
+ 
+ 
 
 	
 
