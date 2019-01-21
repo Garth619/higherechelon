@@ -24,8 +24,6 @@
 		
 		<span class="learn_title animated_title">Learn</span><!-- learn_title -->
 		
-		<span class="blue_line"></span><!-- blue_line -->
-		
 		<div class="our_services_inner">
 			
 			<span class="our_services_title">Our Services</span><!-- our_services_title -->
@@ -132,7 +130,7 @@
 					
 					<div class="services_box_reg">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/pa-3.jpg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/pa-3-new.jpg"/>
 						
 						<div class="services_bar">
 							

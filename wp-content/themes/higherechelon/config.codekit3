@@ -572,6 +572,17 @@
 		"oAP": "/images/pa-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/pa-3-new.jpg": {
+		"ft": 16384,
+		"iS": 169266,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/pa-3-new.jpg",
+		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -583,7 +594,7 @@
 		"oAP": "/images/pa-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/index.php": {
