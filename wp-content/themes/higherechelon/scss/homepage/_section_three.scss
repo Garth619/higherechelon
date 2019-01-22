@@ -79,7 +79,7 @@ span.sec_three_learn_title {
 	line-height: 134px;
 	letter-spacing: 0.16em;
 	font-family: $exo;
-	font-wieght:700;
+	font-weight:700;
 	margin:42px 0 0 0;
 }
 
@@ -183,4 +183,174 @@ span.sec_three_learn_title {
 		}
 	}
 }
+
+
+
+@media screen and (max-width: 1700px) {
+	
+	
+	
+	.sec_three_left {
+		padding-left: 9%;
+	}
+	
+	.sec_three_right {
+		padding-left: 4%;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1565px) {
+	
+	
+	.sec_three_left {
+		padding-left: 5%;
+	}
+	   
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1485px) {
+	
+	#section_three {
+		padding: 0 0 0 64px;
+	}
+	
+	.sec_three_left {
+		padding-top: 91px;
+		padding-left: 84px;
+		svg#badge {
+			margin: 30px 0 0 0;
+		}
+	}
+	
+	
+	span.sec_three_learn_title {
+		font-size: 120px;
+		letter-spacing: 0.16em;
+		line-height: 125px;
+		margin: 39px 0 0 0;
+	}
+	
+	
+	
+	.sec_three_inner {
+		height: 900px;
+	}
+	
+	
+	.sec_three_right {
+		margin: 89px 0 0 0;
+		.testi_wrapper {
+			width: 324px;
+			span.testi_line {
+				margin: 9px 0 0 5px;
+			}
+		}
+	}
+	
+	
+	.sec_three_single_slide {
+    height: 603px;
+	}
+	
+	
+	.sec_three_slider {
+		.slick-dots {
+			right: 33px;
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1230px) {
+	
+	
+	.sec_three_left {
+   	padding-left: 52px;
+  }
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1175px) {
+	
+	#section_three {
+		padding:0;
+	}
+	
+	.sec_three_content {
+		flex-direction: column;
+	}
+	
+	
+	.sec_three_inner {
+		height:auto;
+	}
+	
+	.sec_three_left {
+		width:100%;
+		padding-top: 113px;
+		max-width: 483px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-left:0;
+		height: 970px;
+		svg#badge {
+			margin: 205px 0 0 0;
+		}
+	}
+	
+	span.sec_three_learn_title {
+		max-width: 550px;
+		margin: 48px 0 0 0;
+	}
+	
+	
+	.sec_three_right {
+		width:100%;
+		margin-top:0;
+		padding:0 0 120px 0;
+		.testi_wrapper {
+			margin-top:-87px;
+			span.testi_title {
+				
+			}
+		}
+	}
+	
+	
+	.sec_three_slider {
+		max-width: 470px;
+		margin-top:25px;
+		margin-left:auto;
+		margin-right:auto;
+		.slick-dots {
+			right: -85px;
+			top:77px;
+		}
+	}
+	
+	
+	.sec_three_single_slide {
+		height:auto;
+		.sec_three_inner_slide {
+			max-width:100%;
+		}
+	}
+	
+	
+	
+} /* Media Query */
 

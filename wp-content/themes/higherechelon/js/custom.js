@@ -281,7 +281,15 @@ $('.sec_one_slider').slick({
   slidesToScroll: 1,
 	arrows:false,
 	dots:true,
-	fade:true
+	fade:true,
+	responsive: [
+    {
+      breakpoint: 1175,
+      settings: {
+        adaptiveHeight: true
+      }
+    }
+	]
  });
  
  
