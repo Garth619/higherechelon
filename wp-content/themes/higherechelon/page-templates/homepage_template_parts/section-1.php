@@ -20,7 +20,7 @@
 				
 				<div class="sec_one_col_inner_intro">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/he-logo-badge.svg"/>
+					<?php echo file_get_contents("wp-content/themes/higherechelon/images/he-logo-badge.svg"); ?>
 					
 					<span class="sec_one_col_content">HigherEchelon, Inc. (HE)<br class="laptop"/> is<br class="desktop"/> the premiere trusted partner in organizational excellence.</span><!-- sec_one_col_content -->
 					

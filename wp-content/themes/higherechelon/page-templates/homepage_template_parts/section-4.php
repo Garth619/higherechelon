@@ -2,6 +2,8 @@
 	
 	<span class="adapt_title animated_title">Adapt</span><!-- animated_title -->
 	
+	<span class="lead_title animated_title">Lead</span><!-- animated_title -->
+	
 	<div class="sec_four_content">
 		
 		<div class="sec_four_left">
@@ -25,6 +27,140 @@
 	
 	</div><!-- sec_four_content -->
 	
-	<span class="lead_title animated_title">Lead</span><!-- animated_title -->
+	<div class="sec_four_logos_wrapper">
+		
+		<div class="sec_four_title_wrapper">
+			
+			<span class="sec_four_title">Our Clients</span><!-- sec_four_title -->
+			
+		</div><!-- sec_four_title_wrapper -->
+		
+		<div class="sec_four_logos">
+			
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-salesforce.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-merck.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-ebay.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-paypal.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-amrdec.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-stryker.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-mit.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-saic.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-edge.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-colsa.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-raytheon.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-wharton.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-forest.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-elements.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-halfaker.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-halfaker.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-mit.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-saic.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-edge.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+			<div class="sec_four_single_logo">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-colsa.jpg"/>
+				
+			</div><!-- sec_four_single_logo -->
+			
+		</div><!-- sec_four_logos -->
+		
+	</div><!-- sec_four_logos_wrapper -->
 	
 </section><!-- section_four -->
