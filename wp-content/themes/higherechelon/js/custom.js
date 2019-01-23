@@ -293,6 +293,25 @@ $('.sec_one_slider').slick({
  });
  
  
+ 
+ 
+ 
+ $('.sec_four_logos').slick({
+  infinite: true,
+	mobileFirst:true,
+	arrows:false,
+	dots:true,
+	rows:3,
+	slidesPerRow:3,
+	responsive: [
+    {
+      breakpoint: 1066,
+      settings: "unslick"
+    }
+	]
+ });
+ 
+ 
 
 	
 

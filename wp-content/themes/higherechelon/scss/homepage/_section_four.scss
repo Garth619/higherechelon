@@ -269,6 +269,55 @@ span.lead_title {
 			max-width: 530px;
 		}
 	}
+	
+	
+	
+	.sec_four_logos_wrapper {
+   	margin: 82px auto 160px;
+  }
+  
+  
+  .sec_four_logos {
+	  max-width: 855px;
+	  .slick-dots {
+	  	bottom: 0px;
+	  	li.slick-active {
+	  		button {
+	  			&:before {
+	  				color:$red;
+	  			}
+	  		}
+	  	}
+	  	li:hover {
+	  		button {
+	  			&:before {
+	  				color:$red;
+	  			}
+	  		}
+	  	}
+	  	li {
+	  		margin:0;
+	  		width:20px;
+	  		button {
+	  			width:20px;
+	  			&:before {
+	  				width:20px;
+	  				opacity: 1;
+	  				color: $bluetwo;
+	  				font-size:32px;
+	  			}
+	  		}
+	  	}
+	  }
+	  .sec_four_single_logo {
+		  height: 76px;
+		  margin: 0 0px 85px;
+		  img {
+			  margin-left:auto;
+			  margin-right:auto;
+		  }
+	  }
+  }
 
 	
 	
@@ -294,6 +343,11 @@ span.lead_title {
 	
 	.sec_four_right {
 		margin-top: 43px;
+		margin-bottom:30px;
+	}
+	
+	.sec_four_logos_wrapper {
+		display: none;
 	}
 	
 	
