@@ -78,19 +78,68 @@ footer {
 	}
 	ul {
 		list-style: none;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		li#field_1_6, li#field_1_7 {
+			flex-basis:100%;
+		}
 		li {
+			margin-bottom:19px;
+			width:100%;
+			flex-basis:48.5%;
 			label {
 				display: none;
 			}
-			input {
+			input, textarea {
+				width:100%;
 				background:#18203d;
 				border:0.5px solid #eaeaea;
 				box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.39);
 				text-align: left;
 				cursor: pointer;
-				padding:28px 25px;
+				padding:24px 25px;
+				color:#fff;
+				font-size: 15px;
+				display: inline-block;
+				text-transform: lowercase;
+				font-family: $poppins;
+				letter-spacing:0.05em;
+				position: relative;
+				transition: border 300ms ease-in-out;
+				&:focus {
+					border:0.5px solid $bluelight;
+				}
+			}
+			textarea {
+				height:175px;
 			}
 		}
+	}
+	input[type="submit"] {
+		background:$red;
+		border:none;
+		color:#fff;
+		text-transform: uppercase;
+		width:100%;
+		font-family: $poppins;
+		font-weight: 900;
+		font-size:14px;
+		letter-spacing: 0.3em;
+		padding:26px 10px;
+		cursor: pointer;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			background: $bluelight;
+		}
+	}
+	.gfield_description, .validation_message {
+		color:$bluelight;
+		font-family: $poppins;
+		text-transform: lowercase;
+		font-size:15px;
+		text-align: left;
+		padding:10px 0 0 25px;
 	}
 }
 
@@ -179,6 +228,7 @@ span.my_details_title {
 			letter-spacing: 0.2em;
 			display: block;
 			margin-bottom: 10px;
+			text-transform: uppercase;
 		}
 		span.address {
 			color:#fff;
