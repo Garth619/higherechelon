@@ -76,7 +76,7 @@ footer {
 			display: inline-block;
 		}
 	}
-	ul {
+	ul.gform_fields {
 		list-style: none;
 		display: flex;
 		flex-wrap:wrap;
@@ -149,6 +149,7 @@ footer {
 
 .interested_wrapper {
 	margin-top:43px;
+	position: relative;
 	.interested_input {
 		background:#18203d;
 		border:0.5px solid #eaeaea;
@@ -178,6 +179,36 @@ footer {
 			svg#blue_arrow {
 				width:22px;
 				height:11px;
+			}
+		}
+	}
+	.interested_dropdown {
+		background:#fff;
+		padding:50px 62px 60px;
+		position: absolute;
+		top:72px;
+		left:0;
+		z-index:1;
+		width:100%;
+		display: none;
+		ul {
+			list-style: none;
+			li {
+				text-align: left;
+				font-family: $poppins;
+				font-weight:900;
+				font-size:15px;
+				letter-spacing: 0.05em;
+				color:#000918;
+				margin-bottom:27px;
+				transition: all 200ms ease-in-out;
+				cursor: pointer;
+				&:hover {
+					color:$bluelight;
+				}
+				&:last-of-type {
+					margin-bottom:0;
+				}
 			}
 		}
 	}

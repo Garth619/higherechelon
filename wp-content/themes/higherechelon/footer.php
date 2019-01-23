@@ -30,6 +30,23 @@
 						
 					</div><!-- interested_input -->
 					
+					<div class="interested_dropdown">
+						
+						<ul>
+							<li>Salesforce</li>
+							<li>Executive Coaching</li>
+							<li>Team Building</li>
+							<li>Staff Rides</li>
+							<li>Leadership training</li>
+							<li>Organizational Development</li>
+							<li>Strategic planning</li>
+							<li>Gaming</li>
+							<li>Other technical services</li>
+							<li>Resilient and Adaptable Leader (RAL)</li>
+						</ul>
+						
+					</div><!-- interested_dropdown -->
+					
 				</div><!-- interested_wrapper -->
 				
 				<span class="my_details_title">My Details</span><!-- my_details_title -->

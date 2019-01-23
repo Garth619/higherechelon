@@ -357,5 +357,50 @@ function secotwoHover() {
 secotwoHover();
 
 
+
+// dropdown form
+
+
+$('.interested_input').on('click', function(e) {
+  
+
+	$('.interested_dropdown').slideToggle(400);
+
+
+});
+
+
+
+$('.interested_dropdown ul li').on('click', function(e) {
+  
+
+	var inputtext = $(this).text();
+	
+	$('span.input_text').replaceWith('<span class="input_text">' +inputtext+ '<span>')
+	
+	$('.interested_dropdown').slideUp(400);
+	
+	$('input#input_1_8').val(inputtext)
+	
+
+});
+
+
+
+	$(document).click(function (e){
+
+		var container = $(".interested_wrapper");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+
+			$('.interested_dropdown').slideUp(400);
+		
+		}
+
+	}); 
+
+
+
+
   
 }); // document ready
