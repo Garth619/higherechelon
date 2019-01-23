@@ -24,7 +24,7 @@
 					
 					<div class="interested_input">
 						
-						<span class="input_text">What Business Unit Are you interested in?<span>*</span></span><!-- input_text -->
+						<span class="input_text">What Business Unit Are you interested in? *</span><!-- input_text -->
 						
 						<div class=""><?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow-blue.svg"); ?></div>
 						
