@@ -117,6 +117,19 @@
 		
 		
 	</div><!-- footer_inner -->
+	
+	
+	<div class="copyright">
+		
+		<div class="copyright_inner">
+			
+			<span>&copy; <?php echo date("Y"); ?> HigherEchelon, Inc. Service Disabled Veteran Owned Small Business (SDVOSB)</span>
+			
+			<a href="//1point21interactive.com" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/higherechelon/images/logo-1p21.svg"); ?></a>
+			
+		</div><!-- copyright_inner -->
+		
+	</div><!-- copyright -->
 
 		
 </footer>

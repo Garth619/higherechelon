@@ -378,6 +378,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/internal_banner.jpg": {
+		"ft": 16384,
+		"iS": 174817,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/internal_banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/logo-1p21.svg": {
 		"ft": 2097152,
 		"miP": 0,
