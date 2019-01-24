@@ -6,6 +6,12 @@
 		
 		<div class="footer_col_one">
 			
+			<div class="mobile_badge">
+				
+				<?php echo file_get_contents("wp-content/themes/higherechelon/images/he-logo-badge.svg"); ?>
+				
+			</div><!-- mobile_badge -->
+			
 			<span class="work_title">LET’s WORK TOGETHER</span><!-- work_title -->
 			
 			<span class="build_title">How can we build your business?</span><!-- build_title -->

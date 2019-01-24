@@ -187,7 +187,7 @@ footer {
 	}
 	.interested_dropdown {
 		background:#fff;
-		padding:50px 62px 60px;
+		padding: 50px 62px 56px;
 		position: absolute;
 		top:72px;
 		left:0;
@@ -206,6 +206,7 @@ footer {
 				margin-bottom:27px;
 				transition: all 200ms ease-in-out;
 				cursor: pointer;
+				line-height: 19px;
 				&:hover {
 					color:$bluelight;
 				}
@@ -314,6 +315,11 @@ span.my_details_title {
 }
 
 
+.mobile_badge {
+	display: none;
+}
+
+
 @media screen and (max-width: 1775px) {
 	
 	
@@ -412,12 +418,15 @@ span.my_details_title {
 		margin-top: 164px;
 		span.work_title {
 			text-align: center;
+			margin-left:auto;
+			margin-right:auto;
 			font-size:80px;
 			line-height: 90px;
+			max-width: 605px;
 		}
 		span.build_title {
 			text-align: center;
-			margin-top:30px;
+			margin-top:33px;
 		}
 	}
 	
@@ -442,5 +451,124 @@ span.my_details_title {
 	  margin-right: 7%;
   }
 	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.interested_wrapper {
+		.interested_dropdown {
+    	padding: 38px 46px 56px;
+		}
+	}	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.mobile_badge {
+		display: block;
+		svg {
+			width:106px;
+			display: block;
+			height:86px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+	}
+	
+	.footer_col_one {
+    margin-top: 78px;
+    height:auto;
+    span.work_title {
+	    font-size:45px;
+	    line-height: 50px;
+	    margin-top:25px;
+    }
+    span.build_title {
+	    display: none;
+    }
+	}
+	
+	.footer_col_two_inner {
+    margin: 49px 0 0;
+    max-width: 426px;
+    span.required {
+	    margin-top: 17px;
+    }
+    ul.gform_fields {
+	    display: block;
+    }
+   }
+   
+   
+   .interested_wrapper {
+    	margin-top: 31px;
+    	.interested_input {
+	    	padding: 20px 25px 16px;
+	    	span.input_text {
+		    	line-height: 25px;
+		    	max-width: 280px;
+	    	}
+	    	div {
+		    	svg#blue_arrow {
+			    	margin-top:9px;
+		    	}
+	    	}
+    	}
+    	.interested_dropdown {
+	    	top:86px;
+	    	padding: 38px 27px 45px;
+	    	ul {
+		    	li {
+			    	margin-bottom: 22px;
+		    	}
+	    	}
+    	}
+   }
+   
+   
+   .footer_inner {
+	  padding-left: 40px;
+    padding-right: 40px;
+   }
+   
+   
+   span.my_details_title {
+	   text-align: center;
+	   margin-top: 49px;
+   }
+   
+   
+   .footer_col_three {
+	   display: block;
+	   max-width: 426px;
+   }
+   
+   .footer_badge {
+	   display: none;
+   }
+	
+	 .footer_location_wrapper {
+		 display: block;
+		}
+		
+		.footer_location {
+			&:first-of-type {
+				margin-bottom:67px;
+			}
+		}
+		
+		
+		.footer_col_three {
+			margin: 79px auto 0;
+		}
 	
 } /* Media Query */
