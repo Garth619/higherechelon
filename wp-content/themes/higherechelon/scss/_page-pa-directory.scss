@@ -1,0 +1,66 @@
+.pa_directory_wrapper {
+	max-width:1255px;
+	margin:0px auto 0;
+	padding:117px 0 0;
+	h1.pa_direct_header {
+		margin-bottom:80px;
+	}
+	ul {
+		list-style: none;
+		margin:0;
+		li {
+			font-family: $poppins;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	ul.menu {
+		> li {
+			text-transform: uppercase;
+			font-weight:900;
+			font-size:17px;
+			letter-spacing: 0.2em;
+			&:last-of-type {
+				ul.sub-menu {
+					margin-bottom:0;
+				}
+			}
+			> a {
+					color:$red;
+			}
+		}
+	}
+	ul.sub-menu {
+		margin:23px 0 145px;
+		column-count:3;
+		column-gap:5%;
+		//display: flex;
+		//flex-wrap:wrap;
+		//justify-content: space-between;
+		> li {
+				//flex-basis:30%;
+				//display: flex;
+				//align-items: center;
+				font-weight: 400;
+				text-transform: none;
+				letter-spacing: 0;
+				line-height: 30px;
+				//height:45px;
+				margin-bottom:10px;
+				
+/*
+				display: inline-block;
+				width:100%;
+*/
+				a {
+					color:$bluethree;
+				}
+				&:last-of-type {
+					margin-bottom:0;
+				}
+			}
+	}
+}
+
+

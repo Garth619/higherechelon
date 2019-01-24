@@ -36,6 +36,19 @@ h1,h2,h3,h4 {
 }
 
 
+h1.internal_header {
+	color:$red;
+	font-family: $exo;
+	font-weight:700;
+	font-size:70px;
+	padding-bottom:33px;
+}
+
+h1.header_border {
+	
+	border-bottom:6px solid $red;
+}
+
 
 .content {
 	font-family: $poppins;
@@ -161,6 +174,23 @@ svg#blue_arrow {
    color: #fff; }
  .gform_wrapper ul li ::-moz-placeholder {
     opacity: 1; }
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.content {
+		h3 {
+			padding-top: 10px;
+		}
+	}
+	    
+	
+	
+	
+} /* Media Query */
+
 
 
 @media screen and (max-width: 767px) {
