@@ -48,3 +48,19 @@
 		}
 	}
 }
+
+
+.two_col {
+	display: flex;
+	max-width: 1559px;
+	margin:93px auto 0;
+}
+
+
+
+.sidebar_wrapper {
+	background:$grey;
+	flex-basis:393px;
+	flex-shrink:0;
+	height:300px;
+}

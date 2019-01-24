@@ -14,6 +14,24 @@
 		
 	</div><!-- internal_banner -->
 	
+	<div class="outer_container">
+	
+	<div class="container two_col">
+		
+		
+		<?php get_sidebar();?>
+		
+		<div class="inner_container content">
+			
+			
+			
+		</div><!-- inner_container -->
+		
+		
+	</div><!-- container -->
+	
+	</div><!-- outer_container -->
+	
 </div><!-- internal_main -->
 		
 	<?php // get_template_part( 'loop', 'page' ); ?>
