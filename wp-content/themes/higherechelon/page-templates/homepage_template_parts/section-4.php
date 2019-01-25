@@ -14,7 +14,7 @@
 		
 		<div class="sec_four_right content">
 			
-			<h2>Today’s rapidly changing world requires resilient and adaptive leaders armed with efficient processes and modern technology to be effective</h2>
+			<h2 class="homepage">Today’s rapidly changing world requires resilient and adaptive leaders armed with efficient processes and modern technology to be effective</h2>
 			
 			<p>As trusted partners in organizational excellence, HigherEchelon invests in people, processes, and technology to drive organizational performance to a higher level. Founded on performance psychology and coupled with human capital, and technological service offerings, we work with organizations to address the most complex and ambiguous challenges. HigherEchelon’s competitive edge resides in our ability to bring these three domains together to maximize human and organizational excellence.</p>
 

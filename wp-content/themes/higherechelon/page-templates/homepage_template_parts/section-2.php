@@ -10,7 +10,7 @@
 		
 		<div class="sec_two_content_right content">
 			
-			<h2>Innovative capabilities to serve the needs of america</h2>
+			<h2 class="homepage">Innovative capabilities to serve the needs of america</h2>
 			
 			<p>HigherEchelon, Inc. (HE) is a consulting firm providing training, technology and engineering services that integrates people, processes and technology to optimize performance. As such, we work at the intersection of leadership and technology to help organizations overcome their challenges and drive organizational excellence!</p>
 

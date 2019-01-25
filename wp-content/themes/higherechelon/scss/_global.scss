@@ -60,11 +60,13 @@ h1.header_border {
 		color:#000;
 		font-size:26px;
 		line-height: 38px;
-		border-top:7px $red solid;
-		padding-top:26px;
 		padding-bottom:28px;
 		font-weight:700;
 	}
+	h2.homepage {
+		border-top:7px $red solid;
+		padding-top:26px;
+		}
 	h3 {
 		font-weight: 900;
 		font-size:18px;
@@ -124,18 +126,21 @@ body:not(.page-template-template-home) {
 			border-bottom:6px solid $red;
 			margin-bottom:28px;
 		}
-		h2 {
-			border:none;
-			padding:0 0 26px;
-		}
+		
 	}
 }
 
 
 
 svg#arrow {
-	.arrow-st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
-	.arrow-st1{fill:#fff;}
+	.arrow-st0{
+		fill-rule:evenodd;
+		clip-rule:evenodd;
+		fill:#fff;
+	}
+	.arrow-st1{
+		fill:#fff;
+	}
 }
 
 

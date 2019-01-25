@@ -234,6 +234,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/email.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/email.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/images/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
@@ -266,6 +276,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/images/HE-Logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/he_dot_vector_1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/he_dot_vector_1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/he_dot_vector_2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/he_dot_vector_2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -618,6 +648,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/images/ppt.jpg": {
+		"ft": 16384,
+		"iS": 150118,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/ppt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/thumb.jpg": {
 		"ft": 16384,
 		"iS": 21262,
@@ -855,6 +896,13 @@
 		"oAP": "/page-templates/template-video.php",
 		"oF": 0
 		},
+	"/page-templates/template-whoweare.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/template-whoweare.php",
+		"oF": 0
+		},
 	"/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1077,6 +1125,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/_page-video.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/_page-whoweare.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_page-whoweare.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
