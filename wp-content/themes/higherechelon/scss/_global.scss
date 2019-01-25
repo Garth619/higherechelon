@@ -185,6 +185,14 @@ svg#blue_arrow {
 			padding-top: 10px;
 		}
 	}
+	
+	
+	
+	h1.internal_header {
+		font-size: 60px;
+    line-height: 85px;
+    padding-bottom: 16px;
+	}
 	    
 	
 	
@@ -193,25 +201,6 @@ svg#blue_arrow {
 
 
 
-@media screen and (max-width: 767px) {
-	
-	
-.alignleft,
-.alignright,
-.aligncenter,
-img.alignleft,
-img.alignright,
-img.aligncenter {
-	margin:4px auto 0px;
-	float:none;
-	max-width:100%;
-	height:auto;
-}
-	
-	
-	
-	
-} /* Media Query */
 
 
 @media screen and (max-width: 1066px) {
@@ -239,6 +228,25 @@ img.aligncenter {
 		}
 	}
 	
+	
+	h1.internal_header {
+		font-size:39px;
+		line-height: 59px;
+		padding-bottom: 11px;
+	}
+	
+	
+	.alignleft,
+.alignright,
+.aligncenter,
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin:4px auto 0px;
+	float:none;
+	max-width:100%;
+	height:auto;
+}
 	
 	
 } /* Media Query */

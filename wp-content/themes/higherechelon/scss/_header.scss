@@ -192,6 +192,14 @@ header {
 	
 	
 	
+	body:not(.page-template-template-home) {
+		.header_middle {
+			background:$bluethree;
+		}
+	}
+	
+	
+	
 	
 } /* Media Query */
 
@@ -254,6 +262,11 @@ header {
 		}
 	}
 	
+	body:not(.page-template-template-home) {
+		.header_middle {
+			background:#fff;
+		}
+	}
 	
 	
 	
