@@ -16,21 +16,32 @@
 <?php endif; ?>
 
 
+<div class="blog_feed">
+
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	
+	<div class="single_blog_post">
 		
-	<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+			
+		<div class="blog_meta">
+			
+			<span class="date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span><!-- date -->
+				
+			<?php echo get_the_category_list();?>
 		
-	<?php $pfx_date = get_the_date(); echo $pfx_date ?>
-			
-	<?php echo get_the_category_list();?>
-			
-	<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
-			
-	<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+		</div><!-- blog_meta -->
+		
+		<div class="blog_content">
+				
+			<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+		
+		</div><!-- blog_content -->
+				
+		<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 
-			
+	</div><!-- single_blog_post -->
 		
 <?php endwhile; // end of loop ?>
 
@@ -41,6 +52,8 @@
 	<?php wpbeginner_numeric_posts_nav(); ?>
 
 </div><!-- pagination -->
+
+</div><!-- blog_feed -->
 
 
 <!--

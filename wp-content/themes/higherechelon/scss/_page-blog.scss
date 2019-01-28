@@ -1,0 +1,30 @@
+
+.blog_feed {
+	
+}
+
+.single_blog_post {
+	h2 {
+		a {
+			color:#000;
+			text-decoration: none;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				color:$red;
+			}
+		}
+	}
+}
+
+
+.blog_meta {
+	font-family: $poppins;
+	font-weight: 700;
+	font-size:15px;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color:$bluelight;
+	span.date {
+		
+	}
+}

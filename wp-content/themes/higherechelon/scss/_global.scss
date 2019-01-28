@@ -129,7 +129,9 @@ body:not(.page-template-template-home) {
 			border-bottom:6px solid $red;
 			margin-bottom:28px;
 		}
-		
+		h1.blog_title {
+			padding-bottom:37px;
+		}
 	}
 }
 
