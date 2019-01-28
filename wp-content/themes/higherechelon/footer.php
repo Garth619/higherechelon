@@ -77,15 +77,15 @@
 				
 				<div class="footer_location">
 					
-					<span class="location_title">HiGHERECHELON<br/> HEADQUARTERS</span><!-- location_title -->
+					<span class="location_title"><?php the_field( 'headquarter_title','option'); ?></span><!-- location_title -->
 					
-					<span class="address">101 Lowe Ave. SE, Suite 3B<br/> Huntsville, Al 35801 </span><!-- address -->
+					<span class="address"><?php the_field( 'headquarter_street_address' ); ?></span><!-- address -->
 					
 					<div class="phone_wrapper phone">
 						
 						<span class="phone_title">Phone</span><!-- phone_title -->
 						
-						<a class="phone_number" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', '(256) 945-0091'); ?>">(256) 945-0091</a><!-- phone_number -->
+						<a class="phone_number" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field( 'headquarter_phone','option')); ?>"><?php the_field( 'headquarter_phone','option'); ?></a><!-- phone_number -->
 						
 					</div><!-- phone_wrapper -->
 					
@@ -93,21 +93,21 @@
 						
 						<span class="phone_title">Fax</span><!-- phone_title -->
 						
-						<a class="phone_number" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', '(256) 724-8899'); ?>">(256) 724-8899</a><!-- phone_number -->
+						<a class="phone_number" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field( 'headquarter_fax','option')); ?>"><?php the_field( 'headquarter_fax','option'); ?></a><!-- phone_number -->
 						
 					</div><!-- phone_wrapper -->
 					
-					<a class="get_directions" href="">Get Directions</a><!-- get_directions -->
+					<a class="get_directions" href="<?php the_field( 'headquarter_directions_link','option'); ?>" target="_blanl" rel="noopener">Get Directions</a><!-- get_directions -->
 					
 				</div><!-- footer_location -->
 				
 				<div class="footer_location">
 					
-					<span class="location_title">VIRGINIA OFFICE</span><!-- location_title -->
+					<span class="location_title"><?php the_field( 'second_location_title','option'); ?></span><!-- location_title -->
 					
-					<span class="address">1100 N. Glebe Rd, Suite 1010<br/> Arlington, VA 22201 </span><!-- address -->
+					<span class="address"><?php the_field( 'second_location_address','option'); ?></span><!-- address -->
 					
-					<a class="get_directions" href="">Get Directions</a><!-- get_directions -->
+					<a class="get_directions" href="<?php the_field( 'second_location_get_directions_link','option'); ?> " target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
 					
 				</div><!-- footer_location -->
 				
