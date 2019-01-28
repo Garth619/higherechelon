@@ -45,8 +45,11 @@ h1.internal_header {
 }
 
 h1.header_border {
-	
 	border-bottom:6px solid $red;
+}
+
+h1.centered {
+	text-align: center;
 }
 
 
