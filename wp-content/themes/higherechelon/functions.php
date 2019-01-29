@@ -338,7 +338,8 @@ function wpbeginner_numeric_posts_nav() {
  
     /** Previous Post Link */
     if ( get_previous_posts_link() )
-        printf( '<li class="myprev">%s</li>' . "\n", get_previous_posts_link('prev') );
+    
+        printf( '<li class="mypage_button myprev">%s</li>' . "\n", get_previous_posts_link('') );
  
     /** Link to first page, plus ellipses if necessary */
     if ( ! in_array( 1, $links ) ) {
@@ -347,7 +348,7 @@ function wpbeginner_numeric_posts_nav() {
         printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
  
         if ( ! in_array( 2, $links ) )
-            echo '<li>…</li>';
+            echo '<li class="pagination_dots">…</li>';
     }
  
     /** Link to current page, plus 2 pages in either direction if necessary */
@@ -360,7 +361,7 @@ function wpbeginner_numeric_posts_nav() {
     /** Link to last page, plus ellipses if necessary */
     if ( ! in_array( $max, $links ) ) {
         if ( ! in_array( $max - 1, $links ) )
-            echo '<li>…</li>' . "\n";
+            echo '<li class="pagination_dots">…</li>' . "\n";
  
         $class = $paged == $max ? ' class="active"' : '';
         printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
@@ -368,7 +369,7 @@ function wpbeginner_numeric_posts_nav() {
  
     /** Next Post Link */
     if ( get_next_posts_link() )
-        printf( '<li class="mynext">%s</li>' . "\n", get_next_posts_link('next') );
+        printf( '<li class="mypage_button mynext">%s</li>' . "\n", get_next_posts_link('') );
  
     echo '</ul></div></div>' . "\n";
  

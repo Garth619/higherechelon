@@ -27,7 +27,7 @@
 			
 		<div class="blog_meta">
 			
-			<span class="date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span><!-- date -->
+			<span class="date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span><!-- date --> in 
 				
 			<?php echo get_the_category_list();?>
 		
@@ -38,6 +38,8 @@
 			<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
 		
 		</div><!-- blog_content -->
+		
+		<a class="blog_read_more" href="<?php the_permalink();?>">Read More</a><!-- blog_read_more -->
 				
 		<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 

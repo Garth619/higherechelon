@@ -19,8 +19,7 @@
 	
 	<div class="container two_col">
 		
-		
-		<?php get_sidebar();?>
+		<?php get_sidebar('blog');?>
 		
 		<div class="inner_container content">
 			
@@ -38,6 +37,4 @@
 </div><!-- internal_main -->
 				
 	
-				
-
 <?php get_footer(); ?>

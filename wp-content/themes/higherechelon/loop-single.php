@@ -2,11 +2,20 @@
 
 	<h2><?php the_title();?></h2>
 	
-	<?php $pfx_date = get_the_date(); echo $pfx_date ?>
+	<div class="blog_meta">
 			
-	<?php echo get_the_category_list();?>
+			<span class="date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span><!-- date --> in 
+				
+			<?php echo get_the_category_list();?>
+		
+		</div><!-- blog_meta -->
+
 	
-	<?php the_content();?>
+		<div class="single_post_content">
+			
+			<?php the_content();?>
+			
+		</div><!-- single_post_content -->
 	
 	<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 
