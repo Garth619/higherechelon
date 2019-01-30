@@ -38,13 +38,19 @@
 	display: flex;
 	position: relative;
 	z-index: 1;
+	height:76px;
+	max-width:425px;
+	margin-lefT:auto;
+	margin-right:auto;
 	.cr_input_left {
 		background:#f7f7f8;
 		border-top:1px solid #7f8393;
 		border-left:1px solid #7f8393;
 		border-bottom:1px solid #7f8393;
-		padding:28px 30px;
-		flex-grow: 1;
+		padding:28px 30px 28px;
+		overflow: hidden;
+		width:calc(100% - 70px);
+		white-space: nowrap;
 		span {
 			font-family: $poppins;
 			font-weight: 700;
@@ -57,7 +63,7 @@
 		}
 	}
 	.cr_input_right {
-		flex-basis:70px;
+		width:70px;
 		flex-shrink: 0;
 		background: $red;
 		display: flex;
@@ -103,3 +109,117 @@
 		}
 	}
 }
+
+
+.case_results_feed {
+	max-width:1130px;
+	margin:71px auto 0;
+}
+
+
+.single_case_result {
+	&:last-of-type {
+		a {
+			border:none;
+		}
+	}
+	a {
+		display: flex;
+		justify-content: space-between;
+		text-decoration: none;
+		border-bottom:1px solid #ebebeb;
+		padding-top:65px;
+		padding-bottom:46px;
+		.single_case_left {
+			span {
+				text-transform: uppercase;
+				color:$red;
+				font-family: $poppins;
+				font-weight:900;
+				font-size:22px;
+				letter-spacing: 0.2em;
+				line-height: 25px;
+				display: block;
+				text-align: left;
+			}
+		}
+		.single_case_right {
+			
+			svg#arrow {
+				transform: rotate(180deg);
+				.arrow-st0{
+					fill:$red;
+				}
+				.arrow-st1{
+					fill:$red;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1175px) {
+	
+	
+	.case_results_wrapper {
+		margin-top:0;
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 975px) {
+	
+	
+	.cr_dropdown_container {
+		display: block;
+		max-width: 530px;
+	}
+	
+	.cr_input {
+		margin-bottom:20px;
+	}
+	
+	
+	.cr_dropdown_left {
+		z-index:2;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.cr_badge {
+		margin-bottom: 6px;
+		svg#badge {
+			width: 130px;
+			height: 110px;
+		}
+	}
+	
+	.case_results_feed {
+   	margin: 30px auto 0;
+	}
+	
+	
+	.single_case_result {
+		a {
+			padding-top: 48px;
+			padding-bottom: 36px;
+			.single_case_left {
+				span {
+					
+				}
+			}
+		}
+	} 	
+} /* Media Query */

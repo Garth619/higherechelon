@@ -43,7 +43,7 @@ get_header(); ?>
 							
 							<ul>
 								<li>Test</li>
-								<li>Test 2</li>
+								<li>Test 2 Test 2 Test 2 Test 2 Test 2 Test 2 Test 2</li>
 								<li>Test</li>
 								<li>Test</li>
 								<li>Test</li>
@@ -89,6 +89,110 @@ get_header(); ?>
 					</div><!-- cr_dropdown -->
 					
 					</div><!-- cr_dropdown_container -->
+					
+					<div class="case_results_feed">
+						
+						<div class="single_case_result">
+							
+							<a class="" href="">
+								
+								<div class="single_case_left">
+									
+									<span>American Clothing Company</span>
+									
+								</div><!-- single_case_left -->
+								
+								<div class="single_case_right">
+									
+									<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+									
+								</div><!-- single_case_right -->
+								
+							</a>
+							
+						</div><!-- single_case_result -->
+						
+							<div class="single_case_result">
+							
+							<a class="" href="">
+								
+								<div class="single_case_left">
+									
+									<span>American Clothing Company</span>
+									
+								</div><!-- single_case_left -->
+								
+								<div class="single_case_right">
+									
+									<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+									
+								</div><!-- single_case_right -->
+								
+							</a>
+							
+						</div><!-- single_case_result -->
+						
+							<div class="single_case_result">
+							
+							<a class="" href="">
+								
+								<div class="single_case_left">
+									
+									<span>American Clothing Company</span>
+									
+								</div><!-- single_case_left -->
+								
+								<div class="single_case_right">
+									
+									<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+									
+								</div><!-- single_case_right -->
+								
+							</a>
+							
+						</div><!-- single_case_result -->
+						
+							<div class="single_case_result">
+							
+							<a class="" href="">
+								
+								<div class="single_case_left">
+									
+									<span>American Clothing Company</span>
+									
+								</div><!-- single_case_left -->
+								
+								<div class="single_case_right">
+									
+									<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+									
+								</div><!-- single_case_right -->
+								
+							</a>
+							
+						</div><!-- single_case_result -->
+						
+							<div class="single_case_result">
+							
+							<a class="" href="">
+								
+								<div class="single_case_left">
+									
+									<span>American Clothing Company</span>
+									
+								</div><!-- single_case_left -->
+								
+								<div class="single_case_right">
+									
+									<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+									
+								</div><!-- single_case_right -->
+								
+							</a>
+							
+						</div><!-- single_case_result -->
+						
+					</div><!-- case_results_feed -->
 								
 			</div><!-- case_results_wrapper -->
 		
