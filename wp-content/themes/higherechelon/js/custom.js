@@ -433,6 +433,19 @@ $('.interested_dropdown ul li').on('click', function(e) {
 		}
 
 	}); 
+	
+	
+	$('.cr_list ul li').on('click', function(e) {
+	  
+	
+		var dataFilter = $(this).attr('data-filter');
+		
+		$('.single_case_result').fadeOut(300);
+		
+		$('.'+dataFilter).delay(600).fadeIn(400);
+		
+	
+	});
 
 
   

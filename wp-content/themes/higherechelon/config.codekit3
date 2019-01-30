@@ -1294,6 +1294,13 @@
 		"oAP": "/sidebar.php",
 		"oF": 0
 		},
+	"/single-case_studies.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/single-case_studies.php",
+		"oF": 0
+		},
 	"/single.php": {
 		"cB": 0,
 		"ft": 8192,
