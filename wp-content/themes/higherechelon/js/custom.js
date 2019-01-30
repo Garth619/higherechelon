@@ -399,7 +399,40 @@ $('.interested_dropdown ul li').on('click', function(e) {
 
 	}); 
 
+	
+	// case results
+	
+	
+	$('.cr_input').on('click', function(e) {
+	  
+		$(this).next('.cr_list').slideToggle(250);
+	
+	});
+	
+	
+	$('.cr_list ul li').on('click', function(e) {
+  
 
+		var caseresultstext = $(this).text();
+		
+		$(this).closest('.cr_list').prev('.cr_input').find('span').replaceWith('<span>' +caseresultstext+ '<span>');
+	
+		$('.cr_list').slideUp(250);
+	
+	});
+	
+	
+	$(document).click(function (e){
+
+		var container = $(".cr_dropdown");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+
+			$('.cr_list').slideUp(250);
+		
+		}
+
+	}); 
 
 
   
