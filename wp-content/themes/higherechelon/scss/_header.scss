@@ -252,6 +252,10 @@ header {
 								border-top:1px solid #43495d;
 								padding:53px 0;
 								> li {
+									margin-bottom:50px;
+									&:last-of-type {
+										margin-bottom:0px;
+									}
 									> a {
 										 	font-size:17px;
 										 	color:$red;
@@ -259,7 +263,7 @@ header {
 									 > ul.sub-menu {
 										 	border-bottom:1px solid #43495d;
 										 	padding:27px 0;
-										 	margin-bottom:50px;
+										 	//margin-bottom:50px;
 										 	li {
 											 	text-transform: none;
 											 	margin-bottom:17px;
