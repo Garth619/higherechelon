@@ -455,7 +455,7 @@ $('.interested_dropdown ul li').on('click', function(e) {
 		
 	function desktopNav() {
 	    
-	    if (windowWidth > 1065) {
+	    if (windowWidth > 1389) {
 	        
 	        // custom class added on wordpress menu page for the nav dropdown
 	        
@@ -530,8 +530,24 @@ $('.interested_dropdown ul li').on('click', function(e) {
 					
 					});
 						
+				
+				
+				// close nav when the cursor wanders away from the nav
+				
+				
+					
+						
+						$('.header_left, .header_middle a.phone, .header_right, .nav_close_wrapper').on('mouseover', function(e) {
+						  
+							
+							$('.nav_dropdown').removeClass('open');
+							
+							$('.header_middle nav ul.menu > li.menu-item').removeClass('active');
 						
 						
+						});
+						
+				
 					
 					
 					

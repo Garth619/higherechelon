@@ -102,6 +102,18 @@
 		
 	<div class="nav_dropdown">
 		
+		<div class="nav_close_wrapper">
+			
+			<div class="close_svg">
+				
+				<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow.svg"); ?>
+				
+			</div><!-- close_svg -->
+			
+			<span>Close</span>
+			
+		</div><!-- nav_close_wrapper -->
+		
 		<div class="nav_inner">
 			
 			<div class="nav_transition about_nav">
