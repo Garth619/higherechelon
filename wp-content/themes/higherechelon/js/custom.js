@@ -453,31 +453,90 @@ $('.interested_dropdown ul li').on('click', function(e) {
 	
 	
 		
-	
-	
-	
-	
-		function desktopNav() {
+	function desktopNav() {
 	    
 	    if (windowWidth > 1065) {
 	        
-	        // custom class added on wordpress menu page
+	        // custom class added on wordpress menu page for the nav dropdown
 	        
 	        
 	        // our services --> human capital resources
 	      
-	      	$('li.our_services ul.sub-menu li.human_captial_resources').clone().appendTo('.nav_left_inner .desktop_menu_clone');
+	      	$('li.our_services ul.sub-menu li.human_captial_resources').clone().appendTo('.nav_transition.our_services_nav .nav_left_inner .desktop_menu_clone');
 	      	
 	      	
 	      	// our services --> technology services
 	      
-	      	$('li.our_services ul.sub-menu li.technology_services').clone().appendTo('.nav_right_inner .desktop_menu_clone');
-	    	
-	    	   		
-	    		
-	    } 
-	    
+	      	$('li.our_services ul.sub-menu li.technology_services').clone().appendTo('.nav_transition.our_services_nav .nav_right_inner .desktop_menu_clone');
+	      	
+	      	
+	      	
+	      	// about --> about higher echelon
+	      	
+	      	
+	      	$('li.about_nav ul.sub-menu li.about_higher_echelon').clone().appendTo('.nav_transition.about_nav .nav_left_inner .desktop_menu_clone');
+	      	
+	      	
+					// about --> media
+	      	
+	      	
+	      	$('li.about_nav ul.sub-menu li.about_media').clone().appendTo('.nav_transition.about_nav .nav_right_inner .desktop_menu_clone');
+					
+					
+					// mouseover to open the dropdown
+					
+					
+					$('.header_middle nav ul.menu > li.menu-item').on('mouseover', function(e) {
+					  
+					
+						$('.header_middle nav ul.menu > li.menu-item').removeClass('active');
+						
+						$('.nav_dropdown').removeClass('open');
+					
+					
+					});
+					
+					
+					$('.header_middle nav ul.menu > li.menu-item.menu-item-has-children').on('mouseover', function(e) {
+					  
+					
+						$('.header_middle nav ul.menu > li.menu-item.menu-item-has-children').removeClass('active');
+						
+						$(this).addClass('active');
+						
+						$('.nav_dropdown').addClass('open');
+						
+						
+					});
+					
 
+						
+						
+					$('.header_middle nav ul.menu > li.menu-item.menu-item-has-children.our_services').on('mouseover', function(e) {
+						
+						$('.nav_transition.about_nav').fadeOut(400);
+						
+						$('.nav_transition.our_services_nav ').fadeIn(400);
+					
+					});
+					
+					
+					
+					$('.header_middle nav ul.menu > li.menu-item.menu-item-has-children.about_nav').on('mouseover', function(e) {
+						
+						$('.nav_transition.about_nav').fadeIn(400);
+						
+						$('.nav_transition.our_services_nav ').fadeOut(400);
+					
+					});
+						
+						
+						
+					
+					
+					
+				} 
+	    
 		};
 		
 	
