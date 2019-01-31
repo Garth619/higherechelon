@@ -446,6 +446,42 @@ $('.interested_dropdown ul li').on('click', function(e) {
 		
 	
 	});
+	
+	
+	
+	// nav 
+	
+	
+		
+	
+	
+	
+	
+		function desktopNav() {
+	    
+	    if (windowWidth > 1065) {
+	        
+	        // custom class added on wordpress menu page
+	        
+	        
+	        // our services --> human capital resources
+	      
+	      	$('li.our_services ul.sub-menu li.human_captial_resources').clone().appendTo('.nav_left_inner .desktop_menu_clone');
+	      	
+	      	
+	      	// our services --> technology services
+	      
+	      	$('li.our_services ul.sub-menu li.technology_services').clone().appendTo('.nav_right_inner .desktop_menu_clone');
+	    	
+	    	   		
+	    		
+	    } 
+	    
+
+		};
+		
+	
+	desktopNav();
 
 
   

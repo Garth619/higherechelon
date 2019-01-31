@@ -68,6 +68,12 @@ header {
 			justify-content: flex-end;
 			> li.menu-item-has-children {
 					> a {
+						&:hover {
+							&:after {
+								content:"-";
+								color:$red;
+							}
+						}
 						&:after {
 							content:"+";
 							color:#fff;
@@ -77,6 +83,7 @@ header {
 							display: inline-block;
 							margin:-2px 0px 0 4px;
 							vertical-align: top;
+							transition: all 200ms ease-in-out;
 						}
 					}
 				}
@@ -90,6 +97,10 @@ header {
 				 > a {
 					 	color:#fff;
 					 	text-decoration: none;
+					 	transition: all 200ms ease-in-out;
+					 	&:hover {
+						 	color:$red;
+					 	}
 				 }
 			}
 		}
