@@ -64,13 +64,21 @@
 				
 			</a>
 			
-			<div class="menu_wrapper">
+			<div class="open_close_wrapper">
+				
+				<div class="menu_wrapper open">
 				
 				<span class="menu_bar"></span><!-- menu_bar -->
 				<span class="menu_bar"></span><!-- menu_bar -->
 				<span class="menu_bar"></span><!-- menu_bar -->
 				
 			</div><!-- menu_wrapper -->
+			
+			<div class="mobile_close"></div><!-- mobile_close -->
+				
+			</div><!-- open_close_wrapper -->
+			
+			
 			
 		</div><!-- header_left -->
 		

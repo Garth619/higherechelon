@@ -24,9 +24,21 @@ header {
 	}
 }
 
+
+.open_close_wrapper {
+	position: relative;
+	width:35px;
+	height:100%;
+}
+
+
 .menu_wrapper {
 	width:35px;
+	cursor: pointer;
 	display: none;
+	position: absolute;
+	top:27px;
+	left:0;
 	span {
 		display: block;
 		width:29px;
@@ -39,6 +51,34 @@ header {
 		&:last-of-type {
 			margin-bottom:0;
 		}
+	}
+}
+
+
+
+.mobile_close {
+	width:35px;
+	height:35px;
+	position: relative;
+	position: absolute;
+	top:22px;
+	left:0;
+	display: none;
+	&:before, &:after {
+		content:"";
+		display: block;
+		width:40px;
+		height:3px;
+		position: absolute;
+		top:16px;
+		left:-2px;
+		background:$red;
+	}
+	&:before {
+		transform: rotate(-45deg);
+	}
+	&:after {
+		transform: rotate(45deg);
 	}
 }
 
@@ -216,8 +256,18 @@ header {
 	
 	
 	
-	.menu_wrapper {
+	.menu_wrapper, .mobile_close {
 		display: block;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 400ms ease-in-out;
+	}
+	
+	
+	
+	.menu_wrapper.open, .mobile_close.open {
+		opacity: 1;
+		visibility: visible;
 	}
 	
 	
@@ -225,6 +275,7 @@ header {
 	.header_middle {
 		background:#fff;
 		nav {
+			display: none;
 			position:fixed;
 			top:80px;
 			left:0;
@@ -312,6 +363,10 @@ header {
 	body:not(.page-template-template-home) {
 		.header_middle {
 			background:$bluethree;
+			transition: background 300ms ease-in-out;
+		}
+		.header_middle.white_bg {
+			background:#fff;
 		}
 	}
 	
@@ -400,6 +455,7 @@ header {
 	.header_middle {
 		nav {
 			padding: 47px 47px 90px;
+			top: 76px;
 			ul.menu {
 				> li {
 						> a {
@@ -416,19 +472,31 @@ header {
 												font-weight:700;
 											}
 										}
+										> a.open {
+											&:after {
+												content:"-";
+											}
+										}
 								}
 								> li {
 									  margin-bottom: 0px;
-									  
+									  &:last-of-type {
+										  > a {
+											  	margin-bottom:40px;
+										  }
+									  }
 									  > a {
 										  margin-bottom:24px;
 										  display: block;
-										 
+											
 									  }
 									  > ul.sub-menu {
 												border-bottom: none;
 												padding: 0 0 32px;
 												display: none;
+												li {
+													
+												}
 									}
 								}
 								> li.menu-item-779 {
@@ -443,10 +511,7 @@ header {
 		}
 	}
 	
-	
-	.header_middle nav ul.menu>li>ul.sub-menu>li:last-of-type>a {
-		margin-bottom:40px;
-	}
+
 	
 	
 	
