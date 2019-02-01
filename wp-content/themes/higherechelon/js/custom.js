@@ -548,10 +548,34 @@ $('.interested_dropdown ul li').on('click', function(e) {
 						});
 						
 				
+				}
+				
+				if (windowWidth < 1390) {
+					 
+					 $('.header_middle nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+						 	
+					 $(this).toggleClass('open');
+					   
+					 $(this).next('ul.sub-menu').slideToggle(400);
+					 
+				});
+					 
+					 
+				}
+				
+				
+				if (windowWidth < 768) {
+					
+					$('.header_middle nav ul.menu > li > ul.sub-menu > li > a').on('click', function(e) {
+						 	
+					$(this).toggleClass('open');
+					   
+					 $(this).next('ul.sub-menu').slideToggle(400);
+					 
+				});
 					
 					
-					
-				} 
+				}
 	    
 		};
 		

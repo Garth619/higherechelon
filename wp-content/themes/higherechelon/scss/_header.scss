@@ -236,6 +236,7 @@ header {
 			padding:75px 95px 90px;
 			ul.menu {
 				display: block;
+				padding-bottom: 50px;
 				> li.menu-item-has-children {
 					  > a {
 						  &:after {
@@ -246,11 +247,25 @@ header {
 				> li {
 						> a {
 							display: block;
-								padding-bottom:42px;
+							padding-bottom:42px;
+						}
+						> a.open {
+								color:$red;
+								&:after {
+									content:"-";
+									color:$red;
+								}
 						}
 						> ul.sub-menu {
 								border-top:1px solid #43495d;
 								padding:53px 0;
+								display: none;
+								> li.menu-item-779 {
+										> ul.sub-menu {
+												column-count:2;
+												column-gap:70px;
+										}
+								}
 								> li {
 									margin-bottom:50px;
 									&:last-of-type {
@@ -264,6 +279,11 @@ header {
 										 	border-bottom:1px solid #43495d;
 										 	padding:27px 0;
 										 	//margin-bottom:50px;
+										 	li.current_page_item {
+											 	a {
+												 	color:$red;
+											 	}
+										 	}
 										 	li {
 											 	text-transform: none;
 											 	margin-bottom:17px;
@@ -301,6 +321,17 @@ header {
 } /* Media Query */
 
 
+@media screen and (min-width: 1390px) {
+	
+	
+	.header_middle nav ul.sub-menu {
+		display: none !important;
+	}
+	
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 1066px) {
@@ -364,6 +395,59 @@ header {
 			background:#fff;
 		}
 	}
+	
+	
+	.header_middle {
+		nav {
+			padding: 47px 47px 90px;
+			ul.menu {
+				> li {
+						> a {
+							padding-bottom: 40px;
+						}
+						> ul.sub-menu {
+								padding: 0px 0;
+								border:none;
+								> li.menu-item-has-children {
+										> a {
+											&:after {
+												content:"+";
+												margin-left:12px;
+												font-weight:700;
+											}
+										}
+								}
+								> li {
+									  margin-bottom: 0px;
+									  
+									  > a {
+										  margin-bottom:24px;
+										  display: block;
+										 
+									  }
+									  > ul.sub-menu {
+												border-bottom: none;
+												padding: 0 0 32px;
+												display: none;
+									}
+								}
+								> li.menu-item-779 {
+									> ul.sub-menu {
+										column-count:1;
+										
+									}
+								}
+						}
+				}
+			}
+		}
+	}
+	
+	
+	.header_middle nav ul.menu>li>ul.sub-menu>li:last-of-type>a {
+		margin-bottom:40px;
+	}
+	
 	
 	
 	
