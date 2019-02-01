@@ -1,5 +1,11 @@
 <section id="section_three">
 	
+	<div class="dot_vector sec_three_vector">
+		
+		<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
+		
+	</div><!-- dot_vector -->
+	
 	<div class="sec_three_inner">
 		
 		<div class="sec_three_content">
