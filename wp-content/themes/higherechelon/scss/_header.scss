@@ -429,7 +429,7 @@ header {
 	
 	header {
 		flex-wrap:wrap;
-		height:auto;
+		height:76px;
 	}
 	
 	
@@ -440,10 +440,20 @@ header {
 	.header_right {
 		flex-basis:100%;
 		height: 82px;
+		opacity: 1;
+		visibility: visible;
+		transition: all 300ms ease-in-out;
 		span.arrow {
 			margin-right: 33px;
 		}
 	}
+	
+	
+	.header_right.hide {
+		opacity: 0;
+		visibility: hidden;
+	}
+	
 	
 	body:not(.page-template-template-home) {
 		.header_middle {

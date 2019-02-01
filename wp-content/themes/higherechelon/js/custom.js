@@ -157,9 +157,14 @@ jQuery(document).ready(function($){
         });
       }
     }
+    
+    
+    
+		if (windowWidth < 768) {
 
-
-    //createWaypoint('section_two', '#contact_trigger', 'visible', 500, null, true);
+    	createWaypoint('section_one', '.header_right', 'hide', 85, null, true);
+    
+    }
    
     
     
