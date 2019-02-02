@@ -6,7 +6,7 @@
 	
 	</div>
 	
-	<div class="footer_inner">
+	<div id="consultation" class="footer_inner">
 		
 		
 		<div class="footer_col_one">

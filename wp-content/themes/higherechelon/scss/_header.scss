@@ -274,6 +274,7 @@ header {
 	
 	.header_middle {
 		background:#fff;
+		border-bottom: 1px solid #ebebeb;
 		nav {
 			display: none;
 			position:fixed;
@@ -285,6 +286,7 @@ header {
 			text-align: left;
 			overflow-y: scroll;
 			padding:75px 95px 90px;
+			-webkit-overflow-scrolling: touch;
 			ul.menu {
 				display: block;
 				padding-bottom: 50px;
