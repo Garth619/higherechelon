@@ -1,5 +1,10 @@
 <footer id="footer_trigger">
 	
+	<div class="dot_vector footer_vector">
+		
+		<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
+	
+	</div>
 	
 	<div class="footer_inner">
 		

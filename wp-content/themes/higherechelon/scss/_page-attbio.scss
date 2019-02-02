@@ -179,6 +179,17 @@ span.att_content_header {
 	
 } /* Media Query */
 
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.att_bio_wrapper {
+		padding-bottom:70px;
+	}
+	
+	
+} /* Media Query */
+
 
 @media screen and (max-width: 767px) {
 	
@@ -209,7 +220,10 @@ span.att_content_header {
 		}
 	}
 	
-	    
+	
+	.att_bio_wrapper {
+		padding-bottom:100px;
+	}
 	
 	
 	

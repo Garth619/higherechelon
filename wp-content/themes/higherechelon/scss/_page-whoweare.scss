@@ -1,7 +1,25 @@
+
+
+.dot_vector.who_we_are_vector {
+	top:-575px;
+	left:0px;
+	img {
+		width:2100px;
+		height:926px;
+		left:-100px;
+		transform: rotate(-4deg);
+	}
+}
+
+
+
+
 .who_we_are_wrapper {
 	display: flex;
 	margin:173px auto 0;
 	max-width:1405px;
+	position: relative;
+	z-index:1;
 }
 
 .who_we_are_header {
@@ -32,6 +50,41 @@ img.ppt {
 	display: block;
 	margin:65px auto 0;
 }
+
+
+@media screen and (min-width: 1920px) {
+	
+	
+.dot_vector.who_we_are_vector {
+	img {
+		width:100%;
+		height:auto;
+	}
+}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	
+	
+.dot_vector.who_we_are_vector {
+	top: -497px;
+	img {
+		width:1800px;
+		height:794px;
+	}
+}
+
+	
+	
+} /* Media Query */
+
+
 
 @media screen and (max-width: 1370px) {
 	
@@ -69,6 +122,14 @@ img.ppt {
 		margin-top: 66px;
 	}
 	
+	.dot_vector.who_we_are_vector {
+		top: -400px;
+		img {
+			width:1500px;
+			height:662px;
+		}
+	}
+	
 } /* Media Query */
 
 
@@ -100,6 +161,20 @@ img.ppt {
 	
 } /* Media Query */
 
+@media screen and (max-width: 920px) {
+	
+	
+	.dot_vector.who_we_are_vector {
+		top: -310px;
+		img {
+			width:1300px;
+			height:574px;
+		}
+	}
+	
+	
+} /* Media Query */
+
 
 @media screen and (max-width: 767px) {
 	
@@ -117,7 +192,9 @@ img.ppt {
 		display: none;
 	}
 	
-	
+	.dot_vector.who_we_are_vector {
+		display: none;
+	}
 	
 	
 } /* Media Query */

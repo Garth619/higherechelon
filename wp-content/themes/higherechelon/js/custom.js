@@ -163,6 +163,8 @@ jQuery(document).ready(function($){
 		if (windowWidth < 768) {
 
     	createWaypoint('section_one', '.header_right', 'hide', 85, null, true);
+    	
+    	createWaypoint('internal_main', '.header_right', 'hide', 85, null, true);
     
     }
    

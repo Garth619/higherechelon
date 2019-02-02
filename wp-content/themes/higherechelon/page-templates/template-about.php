@@ -22,6 +22,12 @@ get_header(); ?>
 	
 	<div class="outer_container">
 		
+		<div class="dot_vector about_vector">
+		
+			<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_1.svg"/>
+	
+		</div>
+		
 		<div class="about_page_top">
 			
 			<div class="about_page_left">

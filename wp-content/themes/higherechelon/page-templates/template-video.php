@@ -7,6 +7,12 @@ get_header(); ?>
 <div id="internal_main">
 	
 	<div class="outer_container">
+		
+		<div class="dot_vector video_center_vector">
+		
+			<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
+	
+		</div>
 	
 		<div class="video_wrapper">
 			

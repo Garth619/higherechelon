@@ -9,7 +9,11 @@ get_header(); ?>
 	
 	<div class="outer_container">
 	
+			<div class="dot_vector who_we_are_vector">
+		
+				<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
 	
+			</div>
 			
 			<div class="who_we_are_wrapper">
 				
