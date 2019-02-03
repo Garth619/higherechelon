@@ -177,7 +177,7 @@ span.our_services_title {
 	}
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1925px) {
 	
 	
 .dot_vector.sec_two_vector {
@@ -387,7 +387,7 @@ span.grow_title {
 		.services_bar {
 			span {
 				font-size: 21px;
-				letter-spacing: 0.2em;
+				
 			}
 		}
 	}
@@ -637,6 +637,16 @@ span.grow_title {
 	}
 	
 	
+	
+	.services_box_reg {
+		.services_bar {
+			span {
+				letter-spacing: 0.2em;
+			}
+		}
+	}
+	
+	
 } /* Media Query */
 
 
@@ -738,9 +748,13 @@ span.grow_title {
 			height: 113px;
 			span {
 				font-size:19px;
+				letter-spacing: 0.4em;
 			}
 		}
 	}
+	
+	
+
 	
 	
 	
@@ -791,6 +805,22 @@ span.grow_title {
 } /* Media Query */
 
 
+@media screen and (max-width: 413px) {
+	
+	
+	.services_box_reg {
+		.services_bar {
+			span {
+				letter-spacing: 0.2em;
+			}
+		}
+	}
+	
+	
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 395px) {

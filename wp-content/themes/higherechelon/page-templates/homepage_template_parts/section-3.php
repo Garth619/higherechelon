@@ -14,6 +14,8 @@
 				
 				<div class="sec_three_video_wrapper">
 					
+					<div class="wistia_block wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- wistia_block -->
+					
 					<div class="sec_three_video_inner">
 					
 					<img src="<?php bloginfo('template_directory');?>/images/thumb.jpg"/>

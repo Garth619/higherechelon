@@ -84,7 +84,7 @@
 					
 					<span class="location_title"><?php the_field( 'headquarter_title','option'); ?></span><!-- location_title -->
 					
-					<span class="address"><?php the_field( 'headquarter_street_address' ); ?></span><!-- address -->
+					<span class="address"><?php the_field( 'headquarter_street_address','option'); ?></span><!-- address -->
 					
 					<div class="phone_wrapper phone">
 						

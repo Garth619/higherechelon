@@ -67,7 +67,8 @@ body.page-template-template-padirectory, body.page-template-template-bio {
 
 
 .footer_col_two {
-	flex-basis:50%;
+	//flex-basis:50%;
+	flex-grow:1;
 	display: flex;
 	justify-content: flex-end;
 	padding-right:20px;
@@ -373,7 +374,7 @@ span.my_details_title {
 }
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1925px) {
 	
 	
 	.dot_vector.footer_vector {
@@ -393,12 +394,14 @@ span.my_details_title {
 	
 	
 	.footer_col_one, .footer_col_three {
-		flex-basis:60%;
+		flex-basis:57%;
 	}
 	
 	
 	.footer_col_two {
-		flex-basis:40%;
+
+		flex-basis:43%;
+
 	}
 	
 	
@@ -561,7 +564,6 @@ span.my_details_title {
 		display: block;
 		span {
 			display: block;
-			max-width: 350px;
 			margin:0 auto 15px;
 		}
 		svg {
@@ -707,5 +709,17 @@ span.my_details_title {
 		.footer_col_three {
 			margin: 79px auto 0;
 		}
+		
+		
+.copyright {
+	.copyright_inner {
+		span {
+			max-width: 350px;
+		}
+	}
+}
+		
+		
+		
 	
 } /* Media Query */
