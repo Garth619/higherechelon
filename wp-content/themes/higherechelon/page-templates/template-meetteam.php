@@ -8,7 +8,12 @@ get_header(); ?>
 <div id="internal_main">
 	
 	<div class="outer_container">
+		
+		<div class="dot_vector meet_the_team_vector">
+		
+				<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
 	
+			</div>
 		
 		<div class="meet_team_wrapper">
 				
