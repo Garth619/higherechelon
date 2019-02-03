@@ -170,6 +170,10 @@ jQuery(document).ready(function($){
     
     }
    
+   
+		createWaypoint('section_two', '#header_trigger', 'visible', 0, null, true);
+   
+		createWaypoint('internal_main', '#header_trigger', 'visible', -200, null, true);
     
     
     

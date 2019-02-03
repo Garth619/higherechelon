@@ -48,7 +48,7 @@
 <body <?php body_class(); ?>>
 	
 	
-	<header>
+	<header id="header_trigger">
 		
 		<div class="header_left">
 			
