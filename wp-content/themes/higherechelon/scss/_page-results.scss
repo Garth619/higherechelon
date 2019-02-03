@@ -23,12 +23,14 @@
 	justify-content: space-between;
 	margin:0 auto;
 	max-width:880px;
+	position: relative;
+	z-index:1;
 }
 
 
 
 .cr_dropdown {
-	flex-basis:48.5%;
+	flex-basis:48%;
 	cursor: pointer;
 	position: relative;
 }
@@ -85,8 +87,8 @@
 	border:1px solid #7f8393;
 	position: absolute;
 	top: 75px;
-	left:1px;
-	width:calc(100% - 2px);
+	left:0px;
+	width:100%;
 	padding:0 30px 10px;
 	display: none;
 	ul {
@@ -177,6 +179,52 @@ span.cr_testimonial_header {
 
 
 
+
+ul.case_studies_list {
+	>li {
+		> span {
+				text-transform: uppercase;
+				font-weight: 900;
+				font-size:17px;
+				letter-spacing: 0.15em;
+				line-height: 24px;
+				color:$red;
+				margin-bottom: 23px;
+				display: block;
+		}
+		&:last-of-type {
+			ul {
+				margin-bottom:0;
+				}
+			}
+		ul {
+			margin-bottom: 58px;
+			li {
+				font-weight: 400;
+				text-transform: none;
+				letter-spacing: 0;
+				font-size:17px;
+				line-height: 28px;
+				margin-bottom:10px;
+				&:last-of-type {
+					margin-bottom:0;
+				}
+				a {
+					color:#000;
+					text-decoration: none;
+					transition: all 200ms ease-in-out;
+					&:hover {
+						color:$red;
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+
+
 @media screen and (max-width: 1175px) {
 	
 	
@@ -207,7 +255,7 @@ span.cr_testimonial_header {
 	
 	.cr_dropdown_container {
 		display: block;
-		max-width: 427px;
+		max-width: 425px;
 	}
 	
 	.cr_input {

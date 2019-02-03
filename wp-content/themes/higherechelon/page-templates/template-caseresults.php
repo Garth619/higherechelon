@@ -112,21 +112,23 @@ get_header(); ?>
 						
 						
 					<?php 
+						
+						// run wp query for custom post types "case_studies"
 								
-						$mymain_query = new WP_Query( array( 'post_type' => array ( 'case_studies' ),'posts_per_page' => '-1', 'order' => 'DSC' ) ); 								
+						$mymain_query = new WP_Query( array( 'post_type' => 'case_studies','posts_per_page' => '-1', 'order' => 'DSC' ) ); 								
 							while($mymain_query->have_posts()) : $mymain_query->the_post(); 
 								
-								// get all areas of service terms that are associcted with each post
+								// get all "areas_we_serve" terms that are associcted with each post
 							
 								$areaterms = get_the_terms( get_the_ID(), 'areas_we_serve' );
 							
 									if ( $areaterms && ! is_wp_error( $areaterms ) ) {
 								
-										$area_terms = array(); // set array we will add to later
+										$area_terms = array(); // set array we will add to later to manipulate data
 								
 										foreach ( $areaterms as $term ) {
         
-											// get area of service slugs
+											// get "areas_we_serve" term slugs
 								 
 											$area_terms[] = $term->slug;
     					
@@ -134,17 +136,17 @@ get_header(); ?>
     					
     							} 
 									
-									// get all client terms that are associcted with each post
+									// get all "clients" terms that are associcted with each post
 									
 									$clientterms = get_the_terms( get_the_ID(), 'clients' );
 							
 										if ( $clientterms && ! is_wp_error( $clientterms ) ) {
 								
-											$client_terms = array(); // set array we will add to later
+											$client_terms = array(); // set array we will add to later to manipulate data
 								
 											foreach ( $clientterms as $term ) {
         
-											// get client slugs
+											// get "clients" slugs
 								 
 											$client_terms[] = $term->slug;
     					
@@ -153,21 +155,21 @@ get_header(); ?>
     							} 
     				
     				
-									// merges areas we serve and client arrays
+									// merges "areas_we_serve" and "clients" arrays
     				
 									$term_merge = array_merge($area_terms,$client_terms);
     				
     				
-									// turns new merged array in a string with spaces in between each slug value. this is printed as classes for each case result
+									// turns new merged array in a string with spaces in between each slug value. this is printed as classes for each case result wrapper
     				
-									$term_string = implode(' ', $term_merge);
+									$term_strings = implode(' ', $term_merge);
     				
     				?>
                 	
 										
-						<div class="single_case_result <?php echo $term_string;?>">
+						<div class="single_case_result <?php echo $term_strings;?>">
 							
-							<a class="" href="<?php the_permalink();?>">
+							<a href="<?php the_permalink();?>">
 								
 								<div class="single_case_left">
 									

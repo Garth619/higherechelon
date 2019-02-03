@@ -274,7 +274,6 @@ header {
 	
 	.header_middle {
 		background:#fff;
-		border-bottom: 1px solid #ebebeb;
 		nav {
 			display: none;
 			position:fixed;
@@ -292,22 +291,34 @@ header {
 				padding-bottom: 50px;
 				> li.menu-item-has-children {
 					  > a {
+						  	&:after {
+								  margin: -2px 0px 0 20px;
+						  	}
+						  	&:hover {
+							  	&:after {
+								  	content:"+";
+								  	color:#fff;
+							  	}
+						  	}
+					  }
+					  > a.open {
 						  &:after {
-							  margin: -2px 0px 0 20px;
-						  }
+									content:"-";
+									color:$red;
+								}
 					  }
 				}
 				> li {
 						> a {
 							display: block;
 							padding-bottom:42px;
+							&:hover {
+								color:#fff;
+							}
+							
 						}
 						> a.open {
 								color:$red;
-								&:after {
-									content:"-";
-									color:$red;
-								}
 						}
 						> ul.sub-menu {
 								border-top:1px solid #43495d;
@@ -369,6 +380,13 @@ header {
 		}
 		.header_middle.white_bg {
 			background:#fff;
+		}
+	}
+	
+	
+	body.page-template-template-home {
+		.header_middle {
+			border-bottom: 1px solid #ebebeb;
 		}
 	}
 	

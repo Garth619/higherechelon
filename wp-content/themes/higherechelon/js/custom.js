@@ -405,6 +405,7 @@ $('.interested_dropdown ul li').on('click', function(e) {
 		}
 
 	}); 
+	
 
 	
 	// case results
@@ -455,6 +456,23 @@ $('.interested_dropdown ul li').on('click', function(e) {
 	});
 	
 	
+	// add current menu item functionality to non wp menus in sidebar for Case Studies templets and blog recent posts and blog archives
+	
+	
+	var pgurl = window.location.href;
+	
+	// case studies
+	
+	$("ul.case_studies_list li, .sidebar_blog ul li").each(function(){
+  
+  if($(this).find('a').attr("href") == pgurl)
+    
+    $(this).addClass("current_page");
+	
+	});
+	
+	
+
 	
 	// nav 
 	

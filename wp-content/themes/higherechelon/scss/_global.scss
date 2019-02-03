@@ -136,6 +136,14 @@ body:not(.page-template-template-home) {
 }
 
 
+ul {
+	li.current_page {
+		a {
+			color:$red !important; // override for all list items in various sidebars with different markup sitewide
+		}
+	}
+}
+
 
 svg#arrow {
 	.arrow-st0{

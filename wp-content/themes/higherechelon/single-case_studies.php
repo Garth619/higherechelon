@@ -7,7 +7,7 @@
 	
 	<div class="container two_col">
 		
-		<?php get_sidebar();?>
+		<?php get_sidebar('whoweserve');?>
 		
 		<div class="inner_container content">
 			
