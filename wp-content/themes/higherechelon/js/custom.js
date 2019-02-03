@@ -5,7 +5,9 @@
 
 jQuery(document).ready(function($){
 	
+	// fires section one homepage animations once document is ready
 	
+	$('body').addClass('animation_ready');
 	
 	var windowWidth = $(window).width();
 	

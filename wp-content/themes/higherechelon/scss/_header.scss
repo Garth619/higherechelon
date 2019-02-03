@@ -190,6 +190,10 @@ header {
 .header_right {
 	flex-basis:420px;
 	background:$red;
+	transition: background 200ms ease-in-out;
+	&:hover {
+		background: $bluelight;
+	}
 	a {
 		display: flex;
 		justify-content: center;
