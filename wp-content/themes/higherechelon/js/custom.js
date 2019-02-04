@@ -169,6 +169,17 @@ jQuery(document).ready(function($){
     	createWaypoint('internal_main', '.header_right', 'hide', 85, null, true);
     
     }
+    
+    
+    if (windowWidth < 1390) {
+	    
+   	 	createWaypoint('section_two', '.fixed_tablet_header', 'visible', 0, null, true);
+   	 	
+	 	 	createWaypoint('internal_main', '.fixed_tablet_header', 'visible', -200, null, true);
+    
+    
+    
+    }
    
    
 		createWaypoint('section_two', '#header_trigger', 'visible', 0, null, true);
@@ -545,6 +556,8 @@ $('.interested_dropdown ul li').on('click', function(e) {
 						$('.header_middle nav ul.menu > li.menu-item').removeClass('active');
 						
 						$('.nav_dropdown').removeClass('open');
+						
+						$('body').removeClass('fixed');
 					
 					
 					});
@@ -614,6 +627,7 @@ $('.interested_dropdown ul li').on('click', function(e) {
 						
 						});
 						
+						
 						$(window).scroll(function() {    
 							
 						var scroll = $(window).scrollTop();
@@ -622,7 +636,7 @@ $('.interested_dropdown ul li').on('click', function(e) {
        
 								$('#header_trigger').removeClass('open_animation');
 								
-								 console.log('GARRETT');
+								 //console.log('GARRETT');
 								
     					} 
 						
@@ -642,7 +656,7 @@ $('.interested_dropdown ul li').on('click', function(e) {
 					});
 					
 					
-					$('.open_close_wrapper').on('click', function(e) {
+					$('.open_close_wrapper, .fixed_tablet_menu_wrapper').on('click', function(e) {
 					  
 						$('.header_middle nav').slideToggle(400);
 						
@@ -655,9 +669,32 @@ $('.interested_dropdown ul li').on('click', function(e) {
 					});
 					
 					
+										
 					
-					 
-					 
+					
+					$('.fixed_tablet_menu_wrapper').on('click', function(e) {
+					  
+					
+						$('header').addClass('fixed_open');
+												
+						$('.fixed_tablet_header').addClass('hide');
+					
+					
+					});
+					
+					
+					
+					$('.open_close_wrapper').on('click', function(e) {
+					  
+					
+						$('header').removeClass('fixed_open');
+						
+						$('.fixed_tablet_header').removeClass('hide');
+					
+					
+					});
+
+					
 				}
 				
 				

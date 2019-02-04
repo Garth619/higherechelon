@@ -133,6 +133,34 @@
 		</div><!-- header_right -->
 		
 	</header>
+	
+	<div class="fixed_tablet_header">
+		
+		<div class="fixed_tablet_logo">
+		
+			<a href="<?php bloginfo('url');?>">
+			
+				<img class="mobile" src="<?php bloginfo('template_directory');?>/images/he-logo-stickynav.svg"/>
+			
+			</a>
+		
+		</div><!-- fixed_tablet_logo -->
+		
+		<div class="fixed_tablet_menu_wrapper">
+			
+			<div class="menu_wrapper open">
+				
+					<span class="menu_bar"></span><!-- menu_bar -->
+					<span class="menu_bar"></span><!-- menu_bar -->
+					<span class="menu_bar"></span><!-- menu_bar -->
+				
+				</div><!-- menu_wrapper -->
+			
+				<div class="mobile_close"></div><!-- mobile_close -->
+			
+		</div><!-- fixed_tablet_menu_wrapper -->
+		
+	</div><!-- fixed_tablet_header -->
 		
 	<div class="nav_dropdown">
 		
