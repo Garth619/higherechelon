@@ -52,31 +52,57 @@
 		
 		<div class="header_left">
 			
-			<a class="" href="<?php bloginfo('url');?>">
-				
-				<picture>
-					
-					<source media="(max-width: 1670px)" srcset="<?php bloginfo('template_directory'); ?>/images/he-logo-stickynav.svg">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/he-logo.svg"/>
-				
-				</picture>
-				
-			</a>
+			<div class="reg_state">
 			
-			<div class="open_close_wrapper">
+				<a href="<?php bloginfo('url');?>">
 				
-				<div class="menu_wrapper open">
+					<img class="mobile" src="<?php bloginfo('template_directory');?>/images/he-logo-stickynav.svg"/>
 				
-				<span class="menu_bar"></span><!-- menu_bar -->
-				<span class="menu_bar"></span><!-- menu_bar -->
-				<span class="menu_bar"></span><!-- menu_bar -->
+					<img class="desktop" src="<?php bloginfo('template_directory');?>/images/he-logo.svg"/>
 				
-			</div><!-- menu_wrapper -->
+				</a>
 			
-			<div class="mobile_close"></div><!-- mobile_close -->
+				<div class="open_close_wrapper">
 				
-			</div><!-- open_close_wrapper -->
+					<div class="menu_wrapper open">
+				
+						<span class="menu_bar"></span><!-- menu_bar -->
+						<span class="menu_bar"></span><!-- menu_bar -->
+						<span class="menu_bar"></span><!-- menu_bar -->
+				
+					</div><!-- menu_wrapper -->
+			
+					<div class="mobile_close"></div><!-- mobile_close -->
+				
+				</div><!-- open_close_wrapper -->
+			
+			</div><!-- reg_state -->
+			
+			
+			<div class="fixed_logo_animation">
+				
+				<a href="<?php bloginfo('url');?>">
+				
+					<img class="mobile fixed" src="<?php bloginfo('template_directory');?>/images/he-logo-stickynav.svg"/>
+				
+				</a>
+				
+				<div class="open_close_wrapper">
+				
+					<div class="menu_wrapper open">
+				
+						<span class="menu_bar"></span><!-- menu_bar -->
+						<span class="menu_bar"></span><!-- menu_bar -->
+						<span class="menu_bar"></span><!-- menu_bar -->
+				
+					</div><!-- menu_wrapper -->
+			
+					<div class="mobile_close"></div><!-- mobile_close -->
+				
+				</div><!-- open_close_wrapper -->
+				
+			</div><!-- fixed_logo_animation -->		
+			
 			
 			
 			

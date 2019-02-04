@@ -506,8 +506,6 @@ $('.interested_dropdown ul li').on('click', function(e) {
 	
 	// nav 
 	
-	
-		
 	function desktopNav() {
 	    
 	    if (windowWidth > 1389) {
@@ -561,6 +559,8 @@ $('.interested_dropdown ul li').on('click', function(e) {
 						
 						$('.nav_dropdown').addClass('open');
 						
+						$('body').addClass('fixed');
+						
 						
 					});
 					
@@ -598,9 +598,35 @@ $('.interested_dropdown ul li').on('click', function(e) {
 							$('.nav_dropdown').removeClass('open');
 							
 							$('.header_middle nav ul.menu > li.menu-item').removeClass('active');
+							
+							$('body').removeClass('fixed');
 						
 						
 						});
+						
+						
+						
+						$('.fixed_logo_animation .menu_wrapper').on('click', function(e) {
+						  
+							$('#header_trigger').addClass('open_animation');
+							
+							
+						
+						});
+						
+						$(window).scroll(function() {    
+							
+						var scroll = $(window).scrollTop();
+
+							if (scroll >= 905) {
+       
+								$('#header_trigger').removeClass('open_animation');
+								
+								 console.log('GARRETT');
+								
+    					} 
+						
+						}); 
 						
 				
 				}
