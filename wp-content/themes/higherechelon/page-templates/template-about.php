@@ -44,7 +44,7 @@ get_header(); ?>
 			
 		</div><!-- about_page_top -->
 		
-		<div class="about_middle">
+		<div id="about_middle_trigger" class="about_middle">
 			
 			<div class="about_middle_inner">
 				
@@ -94,7 +94,7 @@ get_header(); ?>
 			
 		</div><!-- about_middle -->
 		
-		<div class="about_bottom">
+		<div id="about_bottom_trigger" class="about_bottom">
 			
 			<span class="about_page_learn_title animated_title">Learn</span><!-- animated_title -->
 			

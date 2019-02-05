@@ -55,6 +55,10 @@
 */
 				a {
 					color:$bluethree;
+					transition: all 200ms ease-in-out;
+					&:hover {
+						color:$red;
+					}
 				}
 				&:last-of-type {
 					margin-bottom:0;

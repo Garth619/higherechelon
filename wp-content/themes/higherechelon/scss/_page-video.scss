@@ -37,6 +37,17 @@
 	height:435px;
 	cursor: pointer;
 	margin-bottom:55px;
+	&:hover {
+		.my_video_thumb {
+			.my_wistia_overlay {
+				svg#play_button {
+					.play_button-cls-1 {
+						fill: $bluelight;
+  				}
+				}
+			}
+		}
+	}
 	.my_video_thumb {
 		width:100%;
 		height:300px;

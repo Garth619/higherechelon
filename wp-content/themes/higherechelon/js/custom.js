@@ -188,6 +188,9 @@ jQuery(document).ready(function($){
 		
 		
 		
+		
+		
+		
 		createWaypoint('section_two', '#section_two', 'visible', 350, null, false);
 		
 		createWaypoint('learn_trigger', '#learn_trigger', 'visible', 450, null, false);
@@ -201,7 +204,12 @@ jQuery(document).ready(function($){
 		createWaypoint('sec_four_title_trigger', '#sec_four_title_trigger', 'visible', 490, null, false);
 		
 		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 730, null, false);
-    
+		
+		createWaypoint('internal_main', '#internal_main', 'visible', 200, null, false);
+		
+		createWaypoint('about_middle_trigger', '#about_middle_trigger', 'visible', 450, null, false);
+		
+		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 250, null, false);
     
     
  
