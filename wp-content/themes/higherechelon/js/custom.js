@@ -185,10 +185,26 @@ jQuery(document).ready(function($){
 		createWaypoint('section_two', '#header_trigger', 'visible', 0, null, true);
    
 		createWaypoint('internal_main', '#header_trigger', 'visible', -200, null, true);
+		
+		
+		
+		createWaypoint('section_two', '#section_two', 'visible', 350, null, false);
+		
+		createWaypoint('learn_trigger', '#learn_trigger', 'visible', 450, null, false);
+		
+		createWaypoint('section_three', '#section_three', 'visible', 400, null, false);
+		
+		createWaypoint('section_four', '#section_four', 'visible', 400, null, false);
+		
+		createWaypoint('lead_trigger', 'span.lead_title', 'visible', -430, null, false);
+		
+		createWaypoint('sec_four_title_trigger', '#sec_four_title_trigger', 'visible', 490, null, false);
+		
+		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 730, null, false);
     
     
     
-    
+ 
     
 
 
