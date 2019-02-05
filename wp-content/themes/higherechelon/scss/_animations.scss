@@ -14,6 +14,7 @@
 			background:$bluethree;
 			position: relative;
 			z-index:10;
+			flex-basis:103px;
 			transition: flex-basis 700ms cubic-bezier(.17,.66,.34,.98);
 			.reg_state {
 				transform: translateX(0);
@@ -24,7 +25,7 @@
 				display: flex;
 				transform: translateX(-200%);
 				opacity: 0;
-				transition: opacity 300ms linear, transform 500ms cubic-bezier(.17,.66,.34,.98);
+				transition: opacity 300ms linear, transform 700ms cubic-bezier(.17,.66,.34,.98);
 				a {
 					img.mobile {
 						display: block;
@@ -114,7 +115,8 @@
 		
 		header.visible.open_animation {
 			.header_left {
-				flex-basis:382px;
+				//flex-basis:382px;
+				flex-basis:103px;
 				.reg_state {
 					transform: translateX(0%);
 					opacity: 1;
@@ -203,6 +205,24 @@
 		}
 	}
 	
+	
+	
+	
+} /* Media Query */
+
+@media screen and (min-width: 1670px) {
+	
+	
+	.header_left {
+		flex-basis:383px;
+	}
+	
+	
+	header.visible.open_animation {
+		.header_left {
+			flex-basis: 383px;
+		}
+   }
 	
 	
 	
