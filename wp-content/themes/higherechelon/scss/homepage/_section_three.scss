@@ -49,6 +49,20 @@
 	align-items: flex-end;
 	position: relative;
 	cursor: pointer;
+	&:hover {
+		.sec_three_video_inner {
+			img {
+				transform: scale(1.2);
+			}
+			.sec_three_video_overlay {
+				svg#play_button {
+					.play_button-cls-1 {
+						fill: $bluelight;
+  				}
+				}
+			}
+		}
+	}
 	.wistia_block {
 		position: absolute;
 		top:0;
@@ -61,10 +75,13 @@
 		max-width:313px;
 		position: relative;
 		margin-right:30px;
+		overflow: hidden;
 		img {
 			width:100%;
 			height:auto;
 			display: block;
+			transform: scale(1);
+			transition: transform 1550ms cubic-bezier(.17,.66,.34,.98);
 		}
 		.sec_three_video_overlay {
 			position: absolute;
@@ -75,10 +92,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			svg {
+			svg#play_button {
 				width:85px;
 				height:85px;
 			}
+			
 		}
 	}
 	span.click_play {
@@ -171,6 +189,7 @@ span.sec_three_learn_title {
 					opacity: 1;
 					color: #fff;
 					font-size:32px;
+					transition: all 200ms ease-in-out;
 				}
 			}
 		}

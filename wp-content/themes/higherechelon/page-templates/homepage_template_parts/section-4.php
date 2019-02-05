@@ -12,7 +12,7 @@
 			
 		</div><!-- sec_four_left -->
 		
-		<div class="sec_four_right content">
+		<div id="lead_trigger" class="sec_four_right content">
 			
 			<h2 class="homepage">Today’s rapidly changing world requires resilient and adaptive leaders armed with efficient processes and modern technology to be effective</h2>
 			
@@ -27,7 +27,7 @@
 	
 	</div><!-- sec_four_content -->
 	
-	<div class="sec_four_logos_wrapper">
+	<div id="sec_four_title_trigger" class="sec_four_logos_wrapper">
 		
 		<div class="sec_four_title_wrapper">
 			

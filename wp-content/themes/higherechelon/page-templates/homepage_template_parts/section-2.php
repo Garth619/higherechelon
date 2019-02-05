@@ -26,7 +26,7 @@
 		
 	</div><!-- sec_two_content_top -->
 	
-	<div class="our_services_wrapper">
+	<div id="learn_trigger" class="our_services_wrapper">
 		
 		<span class="learn_title animated_title">Learn</span><!-- learn_title -->
 		

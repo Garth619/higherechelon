@@ -160,6 +160,7 @@ svg#arrow {
 svg#play_button {
 	.play_button-cls-1 {
     fill: #be1e2d;
+    transition: all 300ms ease-in-out;
   }
 	.play_button-cls-2 {
     fill: #fff;
