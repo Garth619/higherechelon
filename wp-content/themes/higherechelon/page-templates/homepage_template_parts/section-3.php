@@ -14,7 +14,7 @@
 				
 				<div class="sec_three_video_wrapper">
 					
-					<div class="wistia_block wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- wistia_block -->
+					<div class="wistia_block wistia_embed wistia_async_<?php the_field( 'section_three_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- wistia_block -->
 					
 					<div class="sec_three_video_inner">
 					
@@ -32,9 +32,13 @@
 					
 				</div><!-- sec_three_video_wrapper -->
 				
-				<span class="sec_three_learn_title">Learn About</span><!-- sec_three_learn_title -->
+				<span class="sec_three_learn_title"><?php the_field( 'section_three_learn_title' ); ?></span><!-- sec_three_learn_title -->
 				
-				<?php echo file_get_contents("wp-content/themes/higherechelon/images/he-logo-badge.svg"); ?>
+				<?php 
+					
+					$secthree_badge = get_field('section_three_badge');
+					
+					echo file_get_contents("wp-content/themes/higherechelon/images/" . $secthree_badge . ""); ?>
 				
 			</div><!-- sec_three_left -->
 			
@@ -42,7 +46,7 @@
 				
 				<div class="testi_wrapper">
 					
-					<span class="testi_title">Testimonials</span><!-- testi_title -->
+					<span class="testi_title"><?php the_field( 'section_three_title' ); ?></span><!-- testi_title -->
 					
 					<span class="testi_line"></span><!-- testi_line -->
 					
@@ -50,43 +54,26 @@
 				
 				<div class="sec_three_slider">
 					
-					<div class="sec_three_single_slide">
+					<?php if(get_field('section_three_testimonials')): ?>
+					 
+						<?php while(has_sub_field('section_three_testimonials')): ?>
+					 
+								<div class="sec_three_single_slide">
 						
-						<div class="sec_three_inner_slide">
+									<div class="sec_three_inner_slide">
 						
-							<span class="sec_three_slide_content">“Leadership, especially resilient leadership, can and will make or break organizations undergoing challenges like Merck...Finally, training on emotional intelligence.”</span><!-- sec_three_slide_content -->
+										<span class="sec_three_slide_content"><?php the_sub_field( 'content' ); ?></span><!-- sec_three_slide_content -->
 						
-							<span class="sec_three_slide_name">Director of Merck Global Procurement</span><!-- sec_three_slide_name -->
+										<span class="sec_three_slide_name"><?php the_sub_field( 'name' ); ?></span><!-- sec_three_slide_name -->
 						
-						</div><!-- sec_three_inner_slide -->
+								</div><!-- sec_three_inner_slide -->
 						
-					</div><!-- sec_three_single_slide -->
-					
-					
-					<div class="sec_three_single_slide">
-						
-						<div class="sec_three_inner_slide">
-						
-							<span class="sec_three_slide_content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.”</span><!-- sec_three_slide_content -->
-						
-							<span class="sec_three_slide_name">Director of Merck Global Procurement</span><!-- sec_three_slide_name -->
-						
-						</div><!-- sec_three_inner_slide -->
-						
-					</div><!-- sec_three_single_slide -->
-					
-					<div class="sec_three_single_slide">
-						
-						<div class="sec_three_inner_slide">
-						
-							<span class="sec_three_slide_content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim veniam, quis nos, quis nostrud exer.”</span><!-- sec_three_slide_content -->
-						
-							<span class="sec_three_slide_name">Director of Merck Global Procurement</span><!-- sec_three_slide_name -->
-						
-						</div><!-- sec_three_inner_slide -->
-						
-					</div><!-- sec_three_single_slide -->
-					
+							</div><!-- sec_three_single_slide -->
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
+										
 				</div><!-- sec_three_slider -->
 				
 			</div><!-- sec_three_right -->

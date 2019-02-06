@@ -8,19 +8,15 @@
 		
 		<div class="sec_four_left">
 			
-			<h1>Our people are industry experts</h1>
+			<h1><?php the_field( 'section_four_header' ); ?></h1>
 			
 		</div><!-- sec_four_left -->
 		
 		<div id="lead_trigger" class="sec_four_right content">
 			
-			<h2 class="homepage">Today’s rapidly changing world requires resilient and adaptive leaders armed with efficient processes and modern technology to be effective</h2>
+			<h2 class="homepage"><?php the_field( 'section_four_h2_intro' ); ?></h2>
 			
-			<p>As trusted partners in organizational excellence, HigherEchelon invests in people, processes, and technology to drive organizational performance to a higher level. Founded on performance psychology and coupled with human capital, and technological service offerings, we work with organizations to address the most complex and ambiguous challenges. HigherEchelon’s competitive edge resides in our ability to bring these three domains together to maximize human and organizational excellence.</p>
-
-			<p>To develop high performing organizations, we focus on People, Processes, and Bottom-Line Benefits. Our people are industry experts who work alongside clients to create winning strategies that support improvements in effectiveness, efficiency, and productivity. Our ideal vision includes high performing teams, using efficient processes, in a culture that supports and drives the business strategy.</p>
-
-			<p>Our focus on technology services provides the tools that our clients use to optimize organizational performance. HigherEchelon has a highly skilled and experienced team of IT and Engineering professionals. From development of missile systems to gaming software to Salesforce CRM implementations, we develop solutions that impact organizational performance.</p>
+			<?php the_field( 'section_four_content' ); ?>
 			
 		</div><!-- sec_four_right -->
 		
@@ -31,133 +27,29 @@
 		
 		<div class="sec_four_title_wrapper">
 			
-			<span class="sec_four_title">Our Clients</span><!-- sec_four_title -->
+			<span class="sec_four_title"><?php the_field( 'section_four_client_title' ); ?></span><!-- sec_four_title -->
 			
 		</div><!-- sec_four_title_wrapper -->
 		
 		<div class="sec_four_logos">
 			
 			
-			<div class="sec_four_single_logo">
+			<?php if(get_field('section_four_logos')): ?>
+			 
+				<?php while(has_sub_field('section_four_logos')): ?>
+			 
+						<div class="sec_four_single_logo">
+							
+							<?php $image = get_sub_field( 'image' ); ?>
 				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-salesforce.jpg"/>
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-merck.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-ebay.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-paypal.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-amrdec.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-stryker.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-mit.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-saic.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-edge.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-colsa.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-raytheon.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-wharton.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-forest.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-elements.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-halfaker.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-halfaker.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-mit.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-saic.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-edge.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
-			
-			<div class="sec_four_single_logo">
-				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-colsa.jpg"/>
-				
-			</div><!-- sec_four_single_logo -->
+						</div><!-- sec_four_single_logo -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
+	
 			
 		</div><!-- sec_four_logos -->
 		

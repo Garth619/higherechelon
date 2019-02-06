@@ -1,10 +1,12 @@
 	<div class="internal_banner">
 		
-		<img src="<?php bloginfo('template_directory');?>/images/internal_banner.jpg"/>
+		<?php $banner_image = get_field( 'banner_image','option'); ?>
+		
+		<img src="<?php echo $banner_image['url']; ?>" alt="<?php echo $banner_image['alt']; ?>" />
 		
 		<div class="banner_inner">
 			
-			<span class="banner_header">Helping companies take <strong>organizational performance</strong> to a higher level.</span><!-- banner_header -->
+			<span class="banner_header"><?php the_field( 'banner_title','option'); ?></span><!-- banner_header -->
 			
 		</div><!-- banner_inner -->
 		

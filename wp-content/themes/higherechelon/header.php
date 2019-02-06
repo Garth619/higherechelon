@@ -64,10 +64,15 @@
 			<div class="reg_state">
 			
 				<a href="<?php bloginfo('url');?>">
+					
+					<?php $header_mobile_logo = get_field( 'header_mobile_logo','option'); ?>
+					
+					<img class="mobile" src="<?php echo $header_mobile_logo['url']; ?>" alt="<?php echo $header_mobile_logo['alt']; ?>" />
 				
-					<img class="mobile" src="<?php bloginfo('template_directory');?>/images/he-logo-stickynav.svg"/>
-				
-					<img class="desktop" src="<?php bloginfo('template_directory');?>/images/he-logo.svg"/>
+					<?php $header_desktop_logo = get_field( 'header_desktop_logo','option'); ?>
+					
+					<img class="desktop" src="<?php echo $header_desktop_logo['url']; ?>" alt="<?php echo $header_desktop_logo['alt']; ?>" />
+	
 				
 				</a>
 			
@@ -92,7 +97,7 @@
 				
 				<a href="<?php bloginfo('url');?>">
 				
-					<img class="mobile fixed" src="<?php bloginfo('template_directory');?>/images/he-logo-stickynav.svg"/>
+					<img class="mobile fixed" src="<?php echo $header_mobile_logo['url']; ?>" alt="<?php echo $header_mobile_logo['alt']; ?>"/>
 				
 				</a>
 				
@@ -149,7 +154,7 @@
 		
 			<a href="<?php bloginfo('url');?>">
 			
-				<img class="mobile" src="<?php bloginfo('template_directory');?>/images/he-logo-stickynav.svg"/>
+				<img class="mobile" src="<?php echo $header_mobile_logo['url']; ?>" alt="<?php echo $header_mobile_logo['alt']; ?>"/>
 			
 			</a>
 		

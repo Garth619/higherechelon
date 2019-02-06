@@ -17,9 +17,9 @@
 				
 			</div><!-- mobile_badge -->
 			
-			<span class="work_title">LET’s WORK TOGETHER</span><!-- work_title -->
+			<span class="work_title"><?php the_field( 'lets_work_together_title','option'); ?></span><!-- work_title -->
 			
-			<span class="build_title">How can we build your business?</span><!-- build_title -->
+			<span class="build_title"><?php the_field( 'footer_subheader','option'); ?></span><!-- build_title -->
 			
 		</div><!-- footer_col_one -->
 		
@@ -27,7 +27,7 @@
 			
 			<div class="footer_col_two_inner">
 				
-				<span class="new_project">Start a New Project</span><!-- new_project -->
+				<span class="new_project"><?php the_field( 'start_new_project_title' ); ?></span><!-- new_project -->
 				
 				<span class="required"><span>*</span> All Fields Required</span><!-- required -->
 				
@@ -35,7 +35,7 @@
 					
 					<div class="interested_input">
 						
-						<span class="input_text">What Business Unit Are you interested in? *</span><!-- input_text -->
+						<span class="input_text"><?php the_field( 'business_input_field','option'); ?> *</span><!-- input_text -->
 						
 						<div class=""><?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow-blue.svg"); ?></div>
 						
@@ -44,23 +44,24 @@
 					<div class="interested_dropdown">
 						
 						<ul>
-							<li>Salesforce</li>
-							<li>Executive Coaching</li>
-							<li>Team Building</li>
-							<li>Staff Rides</li>
-							<li>Leadership training</li>
-							<li>Organizational Development</li>
-							<li>Strategic planning</li>
-							<li>Gaming</li>
-							<li>Other technical services</li>
-							<li>Resilient and Adaptable Leader (RAL)</li>
+							
+							<?php if(get_field('interested_business_choices','option')): ?>
+							 
+								<?php while(has_sub_field('interested_business_choices','option')): ?>
+							 
+									<li><?php the_sub_field( 'interested_business' ); ?></li>
+							    
+								<?php endwhile; ?>
+							 
+							<?php endif; ?>
+							
 						</ul>
 						
 					</div><!-- interested_dropdown -->
 					
 				</div><!-- interested_wrapper -->
 				
-				<span class="my_details_title">My Details</span><!-- my_details_title -->
+				<span class="my_details_title"><?php the_field( 'my_details_title' ); ?></span><!-- my_details_title -->
 				
 				<?php gravity_form(1, false, false, false, '', true, 12); ?>
 				
@@ -74,7 +75,11 @@
 			
 			<div class="footer_badge">
 				
-				<?php echo file_get_contents("wp-content/themes/higherechelon/images/he-logo-badge.svg"); ?>
+				<?php 
+					
+					$footer_badge = get_field('footer_badge','option');
+				
+					echo file_get_contents("wp-content/themes/higherechelon/images/" . $footer_badge . ""); ?>
 				
 			</div><!-- footer_badge -->
 			
@@ -128,7 +133,7 @@
 		
 		<div class="copyright_inner">
 			
-			<span>&copy; <?php echo date("Y"); ?> HigherEchelon, Inc. Service Disabled Veteran Owned Small Business (SDVOSB)</span>
+			<span>&copy; <?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></span>
 			
 			<a href="//1point21interactive.com" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/higherechelon/images/logo-1p21.svg"); ?></a>
 			
