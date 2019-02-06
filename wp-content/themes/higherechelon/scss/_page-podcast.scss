@@ -1,0 +1,45 @@
+.content {
+	.blog_feed.podcast_feed {
+		.single_blog_post {
+			.blog_meta {
+				a {
+					color:$bluelight;
+					text-decoration: none;
+					transition: all 200ms ease-in-out;
+					&:hover {
+						color:$red;
+					}
+					&:after {
+						content:"|";
+						display: inline-block;
+						margin:0 10px;
+					}
+					&:last-of-type {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+body.single {
+	.podcast_video {
+		margin-top:55px;
+	}
+}
+
+
+
+.podcast_video {
+	display: block;
+	margin:25px 0;
+	iframe {
+		width:100% !important;
+		height:450px;
+		max-width:800px;
+	}
+}

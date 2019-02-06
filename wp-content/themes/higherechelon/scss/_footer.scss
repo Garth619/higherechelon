@@ -607,9 +607,17 @@ span.my_details_title {
 
 @media screen and (max-width: 767px) {
 	
-	body.page-template-template-padirectory .dot_vector.footer_vector, body.page-template-template-bio .dot_vector.footer_vector {
-    display: none;
-}	
+body.page-template-template-padirectory .dot_vector.footer_vector, body.page-template-template-bio .dot_vector.footer_vector {
+	display: none;
+}
+
+
+
+
+.dot_vector.footer_vector {
+	display: none;
+}
+
 	
 	.mobile_badge {
 		display: block;

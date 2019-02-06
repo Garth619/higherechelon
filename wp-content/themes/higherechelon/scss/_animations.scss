@@ -82,7 +82,7 @@
 				}
 			}
 			.header_middle {
-				transform: translateX(-2000px);
+				transform: translateX(-3000px);
 				transition: all 700ms ease-in-out;
 				nav, a.phone {
 					opacity: 0;
@@ -100,7 +100,7 @@
 				}
 			}
 			.header_right {
-				transform: translateX(-2000px);
+				transform: translateX(-3000px);
 				transition: all 700ms ease-in-out;
 				a {
 					opacity: 0;
@@ -297,6 +297,7 @@
 			.slick-dots {
 				transform: translateY(0px);
 				opacity: 1;
+				transition-delay: 1000ms;
 			}
 		}
 		.dot_vector {

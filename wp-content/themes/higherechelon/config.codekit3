@@ -56,6 +56,13 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/archive-podcast.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/archive-podcast.php",
+		"oF": 0
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -909,6 +916,13 @@
 		"oAP": "/page-templates/template-padirectory.php",
 		"oF": 0
 		},
+	"/page-templates/template-podcasts.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/template-podcasts.php",
+		"oF": 0
+		},
 	"/page-templates/template-testimonials.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1130,6 +1144,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/_page-podcast.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_page-podcast.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/_page-results.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1300,6 +1327,13 @@
 		"oAP": "/sidebar-blog.php",
 		"oF": 0
 		},
+	"/sidebar-podcasts.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/sidebar-podcasts.php",
+		"oF": 0
+		},
 	"/sidebar-whoweserve.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1319,6 +1353,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/single-case_studies.php",
+		"oF": 0
+		},
+	"/single-podcast.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/single-podcast.php",
 		"oF": 0
 		},
 	"/single.php": {
@@ -1343,6 +1384,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/style.css.map",
+		"oF": 0
+		},
+	"/taxonomy-podcast_cat.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/taxonomy-podcast_cat.php",
 		"oF": 0
 		}
 	},

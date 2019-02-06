@@ -167,7 +167,7 @@
 	}
 	
 	.contact_location_wrapper {
-		display: block;
+		justify-content: flex-start;
 	}
 	
 	.contact_badge {
@@ -176,7 +176,27 @@
 	
 	.contact_location {
 		margin-bottom:60px;
+		&:last-of-type {
+			margin-left:20%;
+		}
 	}
 	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 625px) {
+	
+	
+	.contact_location_wrapper {
+		display: block;
+	}
+	
+	
+	.contact_location {
+		&:last-of-type {
+			margin-left:0;
+		}
+	}
 	
 } /* Media Query */

@@ -193,13 +193,13 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('section_two', '#section_two', 'visible', 350, null, false);
 		
-		createWaypoint('learn_trigger', '#learn_trigger', 'visible', 450, null, false);
+		createWaypoint('learn_trigger', '#learn_trigger', 'visible', 450, null, true);
 		
 		createWaypoint('section_three', '#section_three', 'visible', 400, null, false);
 		
-		createWaypoint('section_four', '#section_four', 'visible', 400, null, false);
+		createWaypoint('section_four', '#section_four', 'visible', 400, null, true);
 		
-		createWaypoint('lead_trigger', 'span.lead_title', 'visible', -430, null, false);
+		createWaypoint('lead_trigger', 'span.lead_title', 'visible', -430, null, true);
 		
 		createWaypoint('sec_four_title_trigger', '#sec_four_title_trigger', 'visible', 490, null, false);
 		
@@ -209,7 +209,7 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('about_middle_trigger', '#about_middle_trigger', 'visible', 450, null, false);
 		
-		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 250, null, false);
+		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 250, null, true);
     
     
  

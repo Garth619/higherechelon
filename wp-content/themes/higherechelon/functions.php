@@ -194,7 +194,8 @@ register_nav_menus(array(
 -------------------------------------------------------------- */
 
 if (function_exists('register_sidebars')) {
-
+		
+		// blog
 
     register_sidebar(array(
         'name' => 'Recent Posts',
@@ -226,7 +227,33 @@ if (function_exists('register_sidebars')) {
         'before_title' => '<h3 class="widgettitle">',
         'after_title' => '</h3>'
     ));
-
+    
+    
+    // podcasts
+    
+    
+    register_sidebar(array(
+        'name' => 'Recent Podcasts',
+        'id' => 'recent_podcasts',
+        'description' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widgettitle">',
+        'after_title' => '</h3>'
+    ));
+    
+    
+    register_sidebar(array(
+        'name' => 'Podcast Categories',
+        'id' => 'podcasts_categories',
+        'description' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widgettitle">',
+        'after_title' => '</h3>'
+    ));
+  
+    
  }
 
 /* Add Theme Support Page Thumbnails

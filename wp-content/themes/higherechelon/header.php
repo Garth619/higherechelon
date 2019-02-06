@@ -43,6 +43,15 @@
 
 <?php the_field('analytics_code', 'option'); ?>
 
+<script type='text/javascript'>
+(function (d, t) {
+  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  bh.type = 'text/javascript';
+  bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=ezmccfhwldmuufmwlkzn7a';
+  s.parentNode.insertBefore(bh, s);
+  })(document, 'script');
+</script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -112,7 +121,7 @@
 			
 			<nav><?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?></nav>
 			
-			<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', '(256) 945-0091'); ?>">(256) 945-0091</a><!-- phone -->
+			<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('headquarter_phone','option')); ?>"><?php the_field( 'headquarter_phone','option'); ?></a><!-- phone -->
 			
 		</div><!-- header_middle -->
 		

@@ -117,6 +117,10 @@
 			letter-spacing: 0.3em;
 			margin-top:13px;
 			display: inline-block;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				color:#fff;
+			}
 		}
 	}
 }

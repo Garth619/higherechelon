@@ -27,7 +27,9 @@
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	color:$bluelight;
-	margin-top:-7px;
+	margin-top:-0px;
+	padding-bottom:6px;
+	line-height: 21px;
 	span.date {
 		
 	}
@@ -261,6 +263,18 @@ a.blog_read_more {
 	.single_post_content {
 		margin-top:10px;
 	}
+	
+	
+	
+	
+	body.single {
+		.blog_meta {
+			margin-top: 0px;
+			padding-top:20px;
+		}
+	}
+	
+	
 	
 	
 	@media screen and (max-width: 1175px) {
