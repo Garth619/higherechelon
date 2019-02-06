@@ -287,6 +287,19 @@ header {
 }
 
 
+header.visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 200ms ease-in-out;
+}
+
+
+header.visible.stop {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
 
 
 @media screen and (max-width: 1670px) {
@@ -504,6 +517,7 @@ header {
 	.fixed_tablet_header {
 		display: block;
 		opacity: 0;
+		cursor: pointer;
 		visibility: hidden;
 		transform: translateX(-100%);
 		transition: opacity 200ms linear, visibility 200ms linear, transform 800ms cubic-bezier(.17,.66,.34,.98);
@@ -516,6 +530,12 @@ header {
 		visibility: visible;
 		//transition-delay: 500ms;
 	}
+	
+	
+	.fixed_tablet_header.visible.stop {
+		opacity: 0;
+	}
+	
 	
 	.fixed_tablet_header.visible.hide {
 		opacity: 0;

@@ -2,7 +2,7 @@
 	
 	<div class="dot_vector sec_three_vector">
 		
-		<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
+		<img data-src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
 		
 	</div><!-- dot_vector -->
 	
@@ -18,7 +18,7 @@
 					
 					<div class="sec_three_video_inner">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/thumb.jpg"/>
+					<img data-src="<?php bloginfo('template_directory');?>/images/thumb.jpg"/>
 					
 					<div class="sec_three_video_overlay">
 						

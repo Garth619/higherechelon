@@ -2,7 +2,7 @@
 	
 	<div class="dot_vector footer_vector">
 		
-		<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
+		<img data-src="<?php bloginfo('template_directory');?>/images/he_dot_vector_2.svg"/>
 	
 	</div>
 	

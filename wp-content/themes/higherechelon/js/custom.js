@@ -120,7 +120,7 @@ jQuery(document).ready(function($){
       console.log('images loaded');
     }
 
-    // createWaypoint('section_two', null, null, '100%', loadImages, false);
+    createWaypoint('section_one', null, null, 1, loadImages, false);
 
 
 
@@ -176,15 +176,25 @@ jQuery(document).ready(function($){
    	 	createWaypoint('section_two', '.fixed_tablet_header', 'visible', 0, null, true);
    	 	
 	 	 	createWaypoint('internal_main', '.fixed_tablet_header', 'visible', -200, null, true);
+	 	 	
+	 	 	createWaypoint('footer_trigger', '.fixed_tablet_header', 'stop', 122, null, true);
     
-    
-    
-    }
+   	}
+   	
+   	
+   	
+   	if (windowWidth > 1389) {
+	   	
+	   	createWaypoint('footer_trigger', '#header_trigger', 'stop', 80, null, true);
+	   	
+	  }
    
    
 		createWaypoint('section_two', '#header_trigger', 'visible', 0, null, true);
    
 		createWaypoint('internal_main', '#header_trigger', 'visible', -200, null, true);
+		
+		
 		
 		
 		
@@ -203,13 +213,15 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('sec_four_title_trigger', '#sec_four_title_trigger', 'visible', 490, null, false);
 		
-		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 730, null, false);
+		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 530, null, false);
 		
 		createWaypoint('internal_main', '#internal_main', 'visible', 200, null, false);
 		
 		createWaypoint('about_middle_trigger', '#about_middle_trigger', 'visible', 450, null, false);
 		
 		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 250, null, true);
+		
+		
     
     
  

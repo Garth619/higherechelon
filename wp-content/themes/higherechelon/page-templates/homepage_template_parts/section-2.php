@@ -2,7 +2,7 @@
 	
 	<div class="dot_vector sec_two_vector">
 		
-		<img src="<?php bloginfo('template_directory');?>/images/he_dot_vector_1.svg"/>
+		<img data-src="<?php bloginfo('template_directory');?>/images/he_dot_vector_1.svg"/>
 		
 	</div><!-- dot_vector -->
 	
@@ -45,7 +45,7 @@
 						
 						<?php $image = get_sub_field( 'image' ); ?>
 						
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<img data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						
 						<div class="services_bar">
 							
