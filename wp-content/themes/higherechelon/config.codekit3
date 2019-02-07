@@ -326,8 +326,15 @@
 		"oAP": "/images/hero-ipad.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
+		},
+	"/images/hero-ipad.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/images/hero-ipad.webp",
+		"oF": 0
 		},
 	"/images/hero-mobile.jpg": {
 		"ft": 16384,
@@ -350,6 +357,13 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"/images/hero.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/images/hero.webp",
+		"oF": 0
 		},
 	"/images/home_federal_contracts.jpg": {
 		"ft": 16384,

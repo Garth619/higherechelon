@@ -17,6 +17,7 @@ jQuery(document).ready(function($){
     
     // add data-webp and data-jpg to images in section one and you're gucci
     
+/*
      Modernizr.on('webp', function (result) {
 	    
 	    $('#section_one img').each(function () {
@@ -46,10 +47,12 @@ jQuery(document).ready(function($){
     		}
   		
   		});
+*/
   		
   		
   		// background images (one time load, does not reflect media queries or window width..yet)
   		
+/*
   		if (result) {
 	  		
 	  		var sectionOne = '#section_one';
@@ -80,6 +83,7 @@ jQuery(document).ready(function($){
 			// console.log(result);
 	
 		});
+*/
 		
 		
 		
@@ -655,30 +659,29 @@ $('.interested_dropdown ul li').on('click', function(e) {
 						
 						
 						
+						function myscroll() {
+							
+							var scroll = $(window).scrollTop();
+
+								if (scroll >= 905) {
+       
+									$('#header_trigger').removeClass('open_animation');
+								
+									//console.log('GARRETT');
+								
+    						} 
+							
+						}
+						
+						
 						$('.fixed_logo_animation .menu_wrapper').on('click', function(e) {
 						  
 							$('#header_trigger').addClass('open_animation');
 							
+							$(window).one('scroll', myscroll);
 							
-						
 						});
-						
-						
-						$(window).scroll(function() {    
 							
-						var scroll = $(window).scrollTop();
-
-							if (scroll >= 905) {
-       
-								$('#header_trigger').removeClass('open_animation');
-								
-								 //console.log('GARRETT');
-								
-    					} 
-						
-						}); 
-						
-				
 				}
 				
 				if (windowWidth < 1390) {

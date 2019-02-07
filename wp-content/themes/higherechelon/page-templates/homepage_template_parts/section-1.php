@@ -1,17 +1,23 @@
 <section id="section_one">
 	
-		<picture>
+	<picture>
 		
 			<?php 
 				
 				$section_one_banner_desktop = get_field( 'section_one_banner_desktop' );
+				
+				$section_one_banner_desktop_webp = get_field( 'section_one_banner_desktop_webp' );
 			
 				$section_one_banner_ipad = get_field( 'section_one_banner_ipad' );
+				
+				$section_one_banner_ipad_webp = get_field( 'section_one_banner_ipad_webp' );
 			
 			?>
+			
+			<source type="image/webp" media="(max-width: 1450px)" srcset="<?php echo $section_one_banner_ipad_webp['url']; ?>" >
 		
-			<source media="(max-width: 1450px)" srcset="<?php echo $section_one_banner_ipad['url']; ?>">
-	
+			<source type="image/jpg" media="(max-width: 1450px)" srcset="<?php echo $section_one_banner_ipad['url']; ?>">
+			
 			<img class="hero" src="<?php echo $section_one_banner_desktop['url']; ?>" alt="<?php echo $section_one_banner_desktop['alt']; ?>"/>
 
 		</picture>
