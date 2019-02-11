@@ -24,6 +24,14 @@
 				
 				<?php endif;?>
 				
+				
+				<?php if(get_field('case_studies_pdf')) :?>
+				
+					<a class="view_pdf button" href="<?php the_field( 'case_studies_pdf' ); ?>" target="_blank">View More</a><!-- view_pdf -->
+				
+				<?php endif;?>
+				
+				
 				<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 
 				<?php endwhile; // end of loop ?>
