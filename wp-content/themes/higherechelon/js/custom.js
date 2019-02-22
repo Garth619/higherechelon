@@ -468,7 +468,15 @@ $('.interested_dropdown ul li').on('click', function(e) {
 	
 	$('.interested_dropdown').slideUp(400);
 	
-	$('input#input_1_8').val(inputtext)
+	// old gravity form
+	
+	$('input#input_1_8').val(inputtext);
+	
+	// new salesforce
+	
+	$('#myinput_six select').val(inputtext).change();
+	
+	
 	
 
 });
