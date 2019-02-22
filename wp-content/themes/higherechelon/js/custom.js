@@ -474,7 +474,7 @@ $('.interested_dropdown ul li').on('click', function(e) {
 	
 	// new salesforce
 	
-	$('#myinput_six select').val(inputtext).change();
+	$('#myinput_business_unit select').val(inputtext).change();
 	
 	
 	

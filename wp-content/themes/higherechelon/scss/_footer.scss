@@ -173,6 +173,87 @@ body.page-template-template-padirectory, body.page-template-template-bio {
 	}
 }
 
+// new salesforce form
+
+
+
+.sales_force_wrapper {
+	
+	.myinput_wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap:wrap;
+		.salesforce_input {
+			margin-bottom:19px;
+			width:100%;
+			flex-basis:48.5%;
+			label {
+				display: none;
+			}
+			input, textarea {
+				width:100%;
+				background:#18203d;
+				border:0.5px solid #eaeaea;
+				box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.39);
+				text-align: left;
+				cursor: pointer;
+				padding:24px 25px;
+				color:#fff;
+				font-size: 15px;
+				display: inline-block;
+				text-transform: lowercase;
+				font-family: $poppins;
+				letter-spacing:0.05em;
+				position: relative;
+				transition: border 300ms ease-in-out;
+				&:focus {
+					border:0.5px solid $bluelight;
+				}
+			}
+			textarea {
+				height:175px;
+			}
+		}
+		#myinput_business_unit {
+			display: none;
+		}
+		#myinput_explain, #mysubmit_button {
+			flex-basis:100%;
+		}
+		#mysubmit_button {
+			button {
+				background:$red;
+				border:none;
+				color:#fff;
+				text-transform: uppercase;
+				width:100%;
+				font-family: $poppins;
+				font-weight: 900;
+				font-size:14px;
+				letter-spacing: 0.3em;
+				padding:26px 10px;
+				cursor: pointer;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					background: $bluelight;
+				}
+			}
+		}
+	}
+}
+
+
+
+.salesforce_input ::-webkit-input-placeholder {
+  color: #fff; }
+.salesforce_input ::-moz-placeholder {
+  color: #fff; }
+ .salesforce_input :-moz-placeholder {
+   color: #fff; }
+ .salesforce_input :-ms-input-placeholder {
+   color: #fff; }
+ .salesforce_input ::-moz-placeholder {
+    opacity: 1; }
 
 
 
@@ -653,6 +734,50 @@ body.page-template-template-padirectory .dot_vector.footer_vector, body.page-tem
 	    display: block;
     }
    }
+   
+   
+   
+   
+   
+  .sales_force_wrapper {
+	
+	.myinput_wrapper {
+		display: block;
+		.salesforce_input {
+			
+			label {
+				
+			}
+			input, textarea {
+				
+				&:focus {
+					
+				}
+			}
+			textarea {
+				
+			}
+		}
+		#myinput_business_unit {
+			
+		}
+		#myinput_explain, #mysubmit_button {
+		
+		}
+		#mysubmit_button {
+			button {
+				
+				&:hover {
+					
+				}
+			}
+		}
+	}
+}
+
+   
+   
+   
    
    
    .interested_wrapper {

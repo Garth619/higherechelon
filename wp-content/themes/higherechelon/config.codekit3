@@ -874,6 +874,13 @@
 		"oAP": "/page-templates/internal-banner.php",
 		"oF": 0
 		},
+	"/page-templates/sidebar-newsletter.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/sidebar-newsletter.php",
+		"oF": 0
+		},
 	"/page-templates/template-about.php": {
 		"cB": 0,
 		"ft": 8192,

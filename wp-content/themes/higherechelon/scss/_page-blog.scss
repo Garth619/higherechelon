@@ -158,6 +158,25 @@ a.blog_read_more {
 			letter-spacing: 0.3em;
 			display: block;
 		}
+		a.sidebar_button {
+			background:$red;
+			border:none;
+			color:#fff;
+			text-transform: uppercase;
+			font-family: $poppins;
+			font-size: 14px;
+			letter-spacing: 0.3em;
+			font-weight: 700;
+			margin-top:25px;
+			padding:17px 55px;
+			transition: all 200ms ease-in-out;
+			cursor: pointer;
+			text-decoration: none;
+			display: inline-block;
+			&:hover {
+				background:$bluelight;
+			}
+		}
 		ul {
 			list-style: none;
 			margin-top:23px;

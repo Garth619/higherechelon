@@ -68,65 +68,75 @@
 					<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 						
 						<input type="hidden" name="oid" value="00DU0000000J9kM">
-						<input type="hidden" name="retURL" value="http://higherechelon-demo.1p21.io/thank-you">
-						<input type="hidden" name="lead_source" value="http://higherechelon-demo.1p21.io">
+						<input type="hidden" name="retURL" value="<?php the_field( 'salesforce_redirect_link','option'); ?>">
+						<input type="hidden" name="lead_source" value="<?php the_field( 'salesforce_lead_url','option'); ?>">
+<!--
 						<input type="hidden" name="debug" value=1>
 						<input type="hidden" name="debugEmail" value="garrett@1point21interactive.com">
+-->
+						
+						<div class="myinput_wrapper">
 
-						<div id="myinput_one">
-							<label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20" type="text" required="">
-    				</div>
+							<div id="myinput_first_name" class="salesforce_input">
+								<label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" placeholder="First name *" size="20" type="text" required="">
+    					</div>
 
-						<div id="myinput_two">
-							<label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" required="">
-    				</div>
+							<div id="myinput_last_name" class="salesforce_input">
+								<label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" placeholder="Last Name *" size="20" type="text" required="">
+    					</div>
 
-						<div id="myinput_three">
-							<label for="company">Company</label><input id="company" maxlength="40" name="company" size="20" type="text" required="">
-						</div>
+							<div id="myinput_email" class="salesforce_input">
+								<label for="email">Email</label><input id="email" maxlength="80" name="email" placeholder="Email *" size="20" type="email" required="">
+							</div>
+						
+							<div id="myinput_company" class="salesforce_input">
+								<label for="company">Company</label><input id="company" maxlength="40" name="company" placeholder="Company *" size="20" type="text" required="">
+							</div>
 
-						<div id="myinput_four">
-							<label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="email" required="">
-						</div>
+							<div id="myinput_mobile" class="salesforce_input">
+								<label for="mobile">Mobile</label><input id="mobile" maxlength="40" name="mobile" placeholder="Mobile *" size="20" type="text">
+							</div>
 
-						<div id="myinput_five">
-							<label for="mobile">Mobile</label><input id="mobile" maxlength="40" name="mobile" size="20" type="text">
-						</div>
-
-						<div id="myinput_six">
-							<label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text">
-    				</div>
-
-						<div id="myinput_six">
-							<label for="00N0P000006oV79">What business unit would you like to connect with?</label>
-							<select id="00N0P000006oV79" name="00N0P000006oV79" title="HE Business Unit" required="">
+							<div id="myinput_phone" class="salesforce_input">
+								<label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" placeholder="Phone *" size="20" type="text">
+    					</div>
+    				
+							<div id="myinput_business_unit" class="salesforce_input">
+								<label for="00N0P000006oV79">What business unit would you like to connect with?</label>
+								<select id="00N0P000006oV79" name="00N0P000006oV79" title="HE Business Unit" required="">
 								
-							<?php if(get_field('interested_business_choices','option')): ?>
+								<?php if(get_field('interested_business_choices','option')): ?>
 							 
-								<?php while(has_sub_field('interested_business_choices','option')): ?>
+									<?php while(has_sub_field('interested_business_choices','option')): ?>
 								
-									<option value="<?php the_sub_field( 'interested_business' ); ?>"><?php the_sub_field( 'interested_business' ); ?></option>
+										<option value="<?php the_sub_field( 'interested_business' ); ?>"><?php the_sub_field( 'interested_business' ); ?></option>
 							 
-								<?php endwhile; ?>
+									<?php endwhile; ?>
 							 
-							<?php endif; ?>
+								<?php endif; ?>
 								   
         			</select>
     				</div>
 
-					<div id="myinput_seven">
-						<label for="00N0P000006oV7E">Explain the services you are looking for:</label>
-						<textarea id="00N0P000006oV7E" name="00N0P000006oV7E" type="text" wrap="soft" maxlength="255" required=""></textarea>
-					</div>
-
-					<button type="submit" name="submit">Submit</button>
+						<div id="myinput_explain" class="salesforce_input">
+							<label for="00N0P000006oV7E">Explain the services you are looking for:</label>
+							<textarea id="00N0P000006oV7E" name="00N0P000006oV7E" placeholder="Explain the services you are looking for *" type="text" wrap="soft" maxlength="255" required=""></textarea>
+						</div>
+					
+						<div id="mysubmit_button" class="salesforce_input">
+					
+							<button type="submit" name="submit">Come Work With Us</button>
+					
+						</div><!-- mysubmit_button -->
+					
+					</div><!-- myinput_wrapper -->
 				
 				</form>
 					
 				</div><!-- sales_force_wrapper -->
 				
 				
-				<?php gravity_form(1, false, false, false, '', true, 12); ?>
+				<?php // gravity_form(1, false, false, false, '', true, 12); ?>
 				
 			</div><!-- footer_col_two_inner -->
 			
