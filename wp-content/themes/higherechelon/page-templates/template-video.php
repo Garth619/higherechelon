@@ -23,6 +23,9 @@ get_header(); ?>
 				<?php if(get_field('wistia_videos')): ?>
 				 
 					<?php while(has_sub_field('wistia_videos')): ?>
+					
+						
+						<?php if(get_sub_field('wistia_id')) { ?>
 				 
 							<div class="single_video_wrapper">
 					
@@ -42,9 +45,47 @@ get_header(); ?>
 					
 							</div><!-- single_video_wrapper -->
 							
+							<?php } ?>
+							
+							<?php if(get_sub_field('youtube_id')) { ?>
+							
+								
+								<div class="single_video_wrapper">
+					
+									<a href="https://www.youtube.com/embed/<?php the_sub_field( 'youtube_id' ); ?>" data-lity>
+					
+									<div class="my_video_thumb">
+					
+										<div class="my_wistia_video">
+											
+											<img src="https://img.youtube.com/vi/<?php the_sub_field( 'youtube_id' ); ?>/0.jpg"/>
+											
+										</div><!-- my_wistia_video -->
+					
+										<div class="my_wistia_overlay">
+							
+											<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-play.svg"); ?>
+							
+										</div><!-- my_wistia_overlay -->
+					
+									</div><!-- my_video_thumb -->
+					
+									<h2><?php the_sub_field( 'youtube_title' ); ?></h2>
+						
+									</a>
+					
+								</div><!-- single_video_wrapper -->
+								
+							
+							<?php } ?>
+							
+							
+							
 				   <?php endwhile; ?>
 				 
 				<?php endif; ?>
+				
+				
 								
 			</div><!-- video_grid -->
 			

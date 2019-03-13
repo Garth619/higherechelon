@@ -16,7 +16,7 @@
   left: 0;
   white-space: nowrap;
   background: #0b0b0b;
-  background: rgba(0, 0, 0, .9);
+  background: rgba(0, 0, 0, .5);
   outline: none !important;
   opacity: 0;
   -webkit-transition: opacity .3s ease;
@@ -136,8 +136,8 @@
   height: 35px;
 
   /* Change to position: absolute to display close button inside content container */
-  position: fixed;
-  right: 0;
+	position: absolute;
+  right: -41px;
   top: 0;
   -webkit-appearance: none;
   cursor: pointer;
