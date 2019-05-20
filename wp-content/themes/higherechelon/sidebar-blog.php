@@ -19,6 +19,42 @@
 		
 		<?php dynamic_sidebar( 'recent_posts' ); ?>
 
+		<?php dynamic_sidebar( 'social_sidebar' ); ?>
+
+				<div class="social_media_icons">
+					
+					<?php if(get_field('facebook_link','option')) : ?>
+					
+						<a href="<?php the_field( 'facebook_link','option'); ?>" target="_blank" rel="noopener">
+						
+							<?php echo file_get_contents("wp-content/themes/higherechelon/images/footer_social_icon-02.svg"); ?>
+						
+						</a>
+					
+					<?php endif;?>
+					
+					<?php if(get_field('twitter_link','option')) : ?>
+					
+						<a class="" href="<?php the_field( 'twitter_link','option'); ?>" target="_blank" rel="noopener">
+						
+							<?php echo file_get_contents("wp-content/themes/higherechelon/images/footer_social_icon-01.svg"); ?>
+						
+						</a>
+					
+					<?php endif;?>
+
+					<?php if(get_field('linkedin_link','option')) : ?>
+					
+						<a class="linkedin" href="<?php the_field( 'linkedin_link','option'); ?>" target="_blank" rel="noopener">
+						
+							<?php echo file_get_contents("wp-content/themes/higherechelon/images/linkedin.svg"); ?>
+						
+						</a>
+					
+					<?php endif;?>
+					
+				</div><!-- social_media_icons -->
+
 		<?php dynamic_sidebar( 'category_sidebar' ); ?>
 
 		<?php dynamic_sidebar( 'archive_sidebar' ); ?>

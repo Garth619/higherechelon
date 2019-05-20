@@ -22,26 +22,32 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<div class="single_blog_post">
+
+		<?php echo get_the_post_thumbnail( $page->ID, 'thumbnail' ); ?>
+
+		<div class="post-wpr">
 		
-		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+			<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+				
+			<div class="blog_meta">
+				
+				<span class="date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span><!-- date --> in 
+					
+				<?php echo get_the_category_list();?>
 			
-		<div class="blog_meta">
+			</div><!-- blog_meta -->
 			
-			<span class="date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span><!-- date --> in 
-				
-			<?php echo get_the_category_list();?>
-		
-		</div><!-- blog_meta -->
-		
-		<div class="blog_content">
-				
-			<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
-		
-		</div><!-- blog_content -->
-		
-		<a class="blog_read_more" href="<?php the_permalink();?>">Read More</a><!-- blog_read_more -->
-				
-		<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+			<div class="blog_content">
+					
+				<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+			
+			</div><!-- blog_content -->
+			
+			<a class="blog_read_more" href="<?php the_permalink();?>">Read More</a><!-- blog_read_more -->
+					
+			<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+
+		</div>
 
 	</div><!-- single_blog_post -->
 		

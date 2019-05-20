@@ -174,6 +174,14 @@
 					
 					<div class="phone_wrapper">
 						
+						<span class="phone_title">Phone</span><!-- phone_title -->
+						
+						<a class="phone_number" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field( 'headquarter_local_phone','option')); ?>"><?php the_field( 'headquarter_local_phone','option'); ?></a><!-- phone_number -->
+						
+					</div><!-- phone_wrapper -->
+					
+					<div class="phone_wrapper">
+						
 						<span class="phone_title">Fax</span><!-- phone_title -->
 						
 						<a class="phone_number" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field( 'headquarter_fax','option')); ?>"><?php the_field( 'headquarter_fax','option'); ?></a><!-- phone_number -->
@@ -206,9 +214,51 @@
 		
 		<div class="copyright_inner">
 			
-			<span>&copy; <?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></span>
+			<div class="copyright_left">
 			
-			<a href="//1point21interactive.com" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/higherechelon/images/logo-1p21.svg"); ?></a>
+				<span>&copy; <?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></span>
+				
+				<div class="social_media_icons">
+					
+					<?php if(get_field('facebook_link','option')) : ?>
+					
+						<a href="<?php the_field( 'facebook_link','option'); ?>" target="_blank" rel="noopener">
+						
+							<?php echo file_get_contents("wp-content/themes/higherechelon/images/footer_social_icon-02.svg"); ?>
+						
+						</a>
+					
+					<?php endif;?>
+					
+					<?php if(get_field('twitter_link','option')) : ?>
+					
+						<a class="" href="<?php the_field( 'twitter_link','option'); ?>" target="_blank" rel="noopener">
+						
+							<?php echo file_get_contents("wp-content/themes/higherechelon/images/footer_social_icon-01.svg"); ?>
+						
+						</a>
+					
+					<?php endif;?>
+
+					<?php if(get_field('linkedin_link','option')) : ?>
+					
+						<a class="linkedin" href="<?php the_field( 'linkedin_link','option'); ?>" target="_blank" rel="noopener">
+						
+							<?php echo file_get_contents("wp-content/themes/higherechelon/images/linkedin.svg"); ?>
+						
+						</a>
+					
+					<?php endif;?>
+					
+				</div><!-- social_media_icons -->
+			
+			</div><!-- copyright_left -->
+			
+			<a href="//1point21interactive.com" target="_blank" rel="noopener" class="ilawyer">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo-1p21-2.svg"/>
+			
+			</a>
 			
 		</div><!-- copyright_inner -->
 		

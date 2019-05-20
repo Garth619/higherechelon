@@ -19,7 +19,7 @@
 		if ( have_posts() )
 			the_post();
 	?>
-			sup
+			
 			<h1 class="blog_title"><?php if ( is_day() ) : ?>
 				<?php printf( __( '<span>%s</span>', 'twentyten' ), get_the_date() ); ?>
 <?php elseif ( is_month() ) : ?>

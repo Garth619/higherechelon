@@ -1,6 +1,6 @@
 <?php 
 
-/* Template Name: Homepage Subfolder */
+/* Template Name: Technology Services */
 
 get_header(); ?>
 
@@ -29,6 +29,8 @@ get_header(); ?>
 		</div>
 		
 		<div id="about_page_top_trigger" class="about_page_top">
+			
+			<span class="about_page_learn_title_top animated_title">Learn</span><!-- animated_title -->
 			
 			<div class="about_page_left">
 				

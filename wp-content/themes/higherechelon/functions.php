@@ -11,7 +11,7 @@
 function load_my_styles_scripts() {
   
     
-    // wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', '', 5, 'all' ); 
+    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', '', 5, 'all' ); 
     
 
     // disables jquery then registers it again to go into footer
@@ -51,6 +51,7 @@ function load_my_styles_scripts() {
     
     wp_enqueue_script( 'jquery-mygravity', get_template_directory_uri() . '/js/gravityforms-min.js', 'jquery', '', true );
     
+    wp_enqueue_script( 'jquery-sticky', get_template_directory_uri() . '/js/jquery.sticky-kit.min.js', 'jquery', '', true );
 
  }
  
@@ -65,7 +66,7 @@ function load_my_styles_scripts() {
 
  function add_defer_attribute($tag, $handle) {
    // add script handles to the array below
-   $scripts_to_defer = array('jquery', 'jquery-addon', 'jquery-mygravity');
+   $scripts_to_defer = array('jquery', 'jquery-addon', 'jquery-mygravity', 'jquery-sticky');
    
    foreach($scripts_to_defer as $defer_script) {
       if ($defer_script === $handle) {
@@ -122,6 +123,8 @@ add_action("gform_enqueue_scripts", "deregister_scripts");
  
  
 
+
+/*
 function internal_css_print() {
    echo '<style>';
    
@@ -132,6 +135,8 @@ function internal_css_print() {
 
 
 add_action( 'wp_head', 'internal_css_print' );
+*/
+
 
 
  
@@ -207,6 +212,15 @@ if (function_exists('register_sidebars')) {
         'after_title' => '</h3>'
     ));
 
+    register_sidebar(array(
+        'name' => 'Social',
+        'id' => 'social_sidebar',
+        'description' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widgettitle">',
+        'after_title' => '</h3>'
+    ));
     
     register_sidebar(array(
         'name' => 'Category',

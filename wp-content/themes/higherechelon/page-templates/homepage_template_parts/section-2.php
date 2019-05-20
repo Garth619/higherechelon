@@ -20,6 +20,19 @@
 			
 			<?php the_field( 'section_two_content' ); ?>
 			
+			
+			<?php if(get_field('section_two_wistia_video')) { ?>
+			
+			<div class="wistia_video_two_wrapper">
+				
+				<div class="wistia_video_two_overlay wistia_embed wistia_async_<?php the_field( 'section_two_wistia_video' ); ?> popover=true popoverContent=html"></div><!-- wistia_video_two_overlay -->
+				
+				<span class="wistia_video_two"><span>
+				
+			</div><!-- wistia_video_two_wrapper -->
+			
+			<?php } ?>
+			
 		</div><!-- sec_two_content_right -->
 		
 	</div><!-- sec_two_content_top -->
@@ -107,7 +120,11 @@
 			
 		</div><!-- our_services_inner -->
 		
-		<span class="grow_title animated_title">Grow</span><!-- grow_title -->
+		<div class="grow_title_wrapper">
+			
+			<span class="grow_title animated_title">Grow</span><!-- grow_title -->
+			
+		</div><!-- grow_title_wrapper -->
 		
 	</div><!-- our_services_wrapper -->
 	

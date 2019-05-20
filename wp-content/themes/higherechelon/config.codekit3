@@ -280,6 +280,36 @@
 		"oAP": "/images/favicon.ico",
 		"oF": 0
 		},
+	"/images/footer_social_icon-01.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/footer_social_icon-01.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/footer_social_icon-02.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/footer_social_icon-02.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/he-logo-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/he-logo-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/images/he-logo-badge.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -479,6 +509,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/images/linkedin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/logo-1p21-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/logo-1p21-2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -799,6 +839,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/jquery.sticky-kit.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jquery.sticky-kit.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/lity.js": {
 		"bF": 0,
 		"ft": 64,
@@ -947,6 +998,14 @@
 		"oAP": "/page-templates/template-caseresults.php",
 		"oF": 0
 		},
+	"/page-templates/template-caseresults.php.old": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-caseresults.php.old",
+		"oF": 0
+		},
 	"/page-templates/template-contact.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -985,6 +1044,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-templates/template-podcasts.php",
+		"oF": 0
+		},
+	"/page-templates/template-techservices.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-techservices.php",
 		"oF": 0
 		},
 	"/page-templates/template-testimonials.php": {

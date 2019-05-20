@@ -22,8 +22,8 @@ span.adapt_title {
 
 
 span.lead_title {
-	top:945px;
-	left: -205px;
+	top:745px;
+	left:2%;
 }
 
 
@@ -165,8 +165,8 @@ span.lead_title {
   
   
   span.lead_title {
-    top: 974px;
-    left: -11px;
+    top: 735px;
+    left: 11px;
   }
   
   
@@ -198,7 +198,17 @@ span.lead_title {
 	
 } /* Media Query */
 
-
+@media screen and (max-width: 1398px) {
+	
+	
+	span.adapt_title {
+		right:30px;
+	}
+	
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 1290px) {
@@ -211,7 +221,7 @@ span.lead_title {
 	
 	
 	span.lead_title {
-		left:-140px;
+		//left:-140px;
 	}
 	
 	

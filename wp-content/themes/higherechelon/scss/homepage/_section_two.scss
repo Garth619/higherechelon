@@ -64,7 +64,7 @@ span.animated_title {
 
 
 span.learn_title {
-	margin-left:-325px;
+	margin-left:2%;
 	margin-top:-55px;
 }
 
@@ -87,7 +87,6 @@ span.our_services_title {
 		position: absolute;
 		top:9px;
 		right:-101%;
-	
 	}
 }
 
@@ -95,7 +94,6 @@ span.our_services_title {
 .our_services_inner {
 	max-width:1415px;
 	margin: -111px auto 0;
-	
 }
 
 
@@ -257,10 +255,17 @@ span.our_services_title {
 }
 
 
+.grow_title_wrapper {
+	width:100%;
+	text-align: center;
+}
+
+
 span.grow_title {
-	margin-top:-50px;
-	margin-right:-215px;
-	text-align: right;
+	margin-top:20px;
+	display: block;
+	//margin-right:-215px;
+	//text-align: right;
 }
 
 
@@ -300,7 +305,7 @@ span.grow_title {
 	
 	span.learn_title {
 		margin-top: -36px;
-		margin-left: -148px;
+		//margin-left: -148px;
 	}
 	
 	
@@ -337,9 +342,11 @@ span.grow_title {
 	}
 	
 	
+/*
 	span.grow_title {
 		margin-right: -175px;
 	}
+*/
 	
 	
 } /* Media Query */
@@ -372,11 +379,30 @@ span.grow_title {
 	}
 }
 
-	
+.our_services_wrapper {
+	padding-top:45px;
+}
 	
 	
 } /* Media Query */
 
+
+
+@media screen and (max-width: 1398px) {
+	
+	
+	span.grow_title {
+    margin-right: 0%
+	}
+	
+	
+	span.learn_title {
+		margin-left: 3%;
+	}
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 1355px) {
@@ -406,6 +432,18 @@ span.grow_title {
 
 
 
+@media screen and (max-width: 1315px) {
+	
+	
+	span.animated_title {
+    font-size: 200px;
+	}
+	
+	
+} /* Media Query */
+
+
+
 @media screen and (max-width: 1290px) {
 	
 	
@@ -417,7 +455,7 @@ span.grow_title {
 	
 	
 	span.learn_title {
-		margin-left: -258px;
+		//margin-left: -258px;
 	}
 	
 	
@@ -430,20 +468,117 @@ span.grow_title {
 @media screen and (max-width: 1265px) {
 	
 	
+	#section_two {
+		padding-bottom:87px;
+	}
+	
+	
 	.our_services_boxes {
-		flex-wrap:wrap;
+		display: block;
+		max-width:600px;
+		margin-left:auto;
+		margin-right:auto;
+		
+		.slick-dots {
+			bottom: -30px;
+			li.slick-active {
+				button {
+					&:before {
+						color:$red;
+					}
+				}
+			}
+			li:hover {
+				button {
+					&:before {
+						color:$red;
+					}
+				}
+			}
+			li {
+				margin:0;
+				width:16px;
+				button {
+					width:16px;
+					&:before {
+						width:16px;
+						opacity: 1;
+						color: $bluethree;
+						font-size:32px;
+					}
+				}
+			}
+		}
 	}
 	
 	
 	.our_services_single_box {
 		flex-basis:48%;
 		margin-bottom:35px;
+		&:hover {
+			transform: translateY(0px);
+		}
 	}
 	
+	.services_box_hover {
+		span.services_hover_title {
+			margin-top: 235px;
+		}
+	}
+	
+	    
 	
 	.our_services_inner {
     margin-top: 74px;
 	}
+	
+	
+	
+	
+	.our_services_single_box.tablet {
+		&:hover {
+			transform: translateY(0);
+			.services_box_reg {
+				.services_bar {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			.services_box_hover {
+				a {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+		.services_box_hover {
+			a {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+}
+	
+	
+		
+	
+	
+	.our_services_single_box.tablet.open {
+		.services_box_reg {
+			.services_bar {
+				opacity: 0;
+				visibility: hidden;		
+			}
+			}
+		.services_box_hover {
+			a {
+				opacity: 1;
+				visibility: visible;
+				padding:0 25px;
+			}
+		}
+	}
+		
 	
 	
 	
@@ -493,7 +628,7 @@ span.grow_title {
 	}
 	
 	.our_services_boxes {
-    margin: 71px 0 0;
+    margin: 71px auto 0;
 	}
 	
 	
@@ -517,50 +652,7 @@ span.grow_title {
 	
 	
 	
-	.our_services_single_box.tablet {
-		&:hover {
-			transform: translateY(0);
-			.services_box_reg {
-				.services_bar {
-					opacity: 1;
-					visibility: visible;
-				}
-			}
-			.services_box_hover {
-				a {
-					opacity: 0;
-					visibility: hidden;
-				}
-			}
-		}
-		.services_box_hover {
-			a {
-				opacity: 0;
-				visibility: hidden;
-			}
-		}
-}
 	
-	
-		
-	
-	
-	.our_services_single_box.tablet.open {
-		.services_box_reg {
-			.services_bar {
-				opacity: 0;
-				visibility: hidden;		
-			}
-			}
-		.services_box_hover {
-			a {
-				opacity: 1;
-				visibility: visible;
-				padding:0 25px;
-			}
-		}
-	}
-		
 	
 	
 	
@@ -630,9 +722,14 @@ span.grow_title {
 	
 	
 	
+	.our_services_boxes {
+		max-width: 510px;
+	}
+	    
+	
 	.services_box_hover {
 		span.services_hover_title {
-			margin-top: 43px;
+			margin-top: 200px;
 		}
 	}
 	
@@ -654,7 +751,7 @@ span.grow_title {
 @media screen and (max-width: 767px) {
 	
 #section_two {
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 
 .sec_two_content_top {
@@ -800,6 +897,18 @@ span.grow_title {
 	    
 	    
 	
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 450px) {
+	
+	.services_box_reg {
+		height: 520px;
+	}
 	
 	
 } /* Media Query */

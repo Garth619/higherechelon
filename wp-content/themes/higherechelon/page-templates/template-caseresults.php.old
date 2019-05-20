@@ -41,24 +41,7 @@ get_header(); ?>
 						
 						<div class="cr_list">
 							
-							<?php 
-								
-								
-								$custom_order = array(30,31,7,8,9);
-								
-								// order goes:
-								
-								// Human Captial Sevcies
-								// Salesforce Implementation
-								// Prime Contract Vehicles
-								// Prime Contracts
-								// Sub Contract Vehicles
-								
-								$terms = get_terms(array(
-									'taxonomy' => 'areas_we_serve',
-									'include' => $custom_order,
-									'orderby' => 'include'
-								));
+							<?php $terms = get_terms( 'areas_we_serve' );
 								
 								if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 								
@@ -80,7 +63,49 @@ get_header(); ?>
 						
 					</div><!-- cr_dropdown -->
 					
-										
+					
+						<div class="cr_dropdown cr_dropdown_right">
+						
+						<div class="cr_input">
+							
+							<div class="cr_input_left">
+								
+								<span>Clients</span>
+								
+							</div><!-- cr_input_left -->
+							
+							<div class="cr_input_right">
+								
+								<?php echo file_get_contents("wp-content/themes/higherechelon/images/ico-arrow-blue.svg"); ?>
+								
+							</div><!-- cr_input_right -->
+							
+						</div><!-- cr_input -->
+						
+						<div class="cr_list">
+							
+							<?php $terms = get_terms( 'clients' );
+								
+								if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+								
+								echo '<ul>';
+								
+								foreach ( $terms as $term ) {
+								
+									echo '<li data-filter="' . $term->slug .'">' . $term->name . '</li>';
+        
+     						}
+		 						
+		 						echo '</ul>';
+		 						
+		 						}
+							
+							?>
+							
+						</div><!-- cr_list -->
+						
+					</div><!-- cr_dropdown -->
+					
 					</div><!-- cr_dropdown_container -->
 					
 					<div class="case_results_feed">
@@ -111,15 +136,33 @@ get_header(); ?>
     					
     							} 
 									
+									// get all "clients" terms that are associcted with each post
 									
+									$clientterms = get_the_terms( get_the_ID(), 'clients' );
+							
+										if ( $clientterms && ! is_wp_error( $clientterms ) ) {
+								
+											$client_terms = array(); // set array we will add to later to manipulate data
+								
+											foreach ( $clientterms as $term ) {
+        
+											// get "clients" slugs
+								 
+											$client_terms[] = $term->slug;
+    					
+    								}
+    					
+    							} 
+    				
+    				
 									// merges "areas_we_serve" and "clients" arrays
     				
-									//$term_merge = array_merge($area_terms,$client_terms);
+									$term_merge = array_merge($area_terms,$client_terms);
     				
     				
 									// turns new merged array in a string with spaces in between each slug value. this is printed as classes for each case result wrapper
     				
-									$term_strings = implode(' ', $area_terms);
+									$term_strings = implode(' ', $term_merge);
     				
     				?>
                 	

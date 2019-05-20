@@ -223,11 +223,15 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('about_middle_trigger', '#about_middle_trigger', 'visible', 450, null, false);
 		
+		
+		createWaypoint('about_page_top_trigger', '#about_page_top_trigger', 'visible', -50, null, true);
+		
 		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 250, null, true);
 		
+	
 		
-    
-    
+		
+       
  
     
 
@@ -256,43 +260,20 @@ jQuery(document).ready(function($){
 		 /* Wistia - Call function when script needs to be loaded either by hover or waypoints
      --------------------------------------------------------------------------------------- */
 
-    //function wistiaLoad() {
-     // jQuery.getScript('https://fast.wistia.com/assets/external/E-v1.js', function(data, textStatus, jqxhr) {
-        //console.log('wistia load:', textStatus); // Success
-     // });
-   // }
+    function wistiaLoad() {
+     	jQuery.getScript('https://fast.wistia.com/assets/external/E-v1.js', function(data, textStatus, jqxhr) {
+        console.log('wistia load:', textStatus); // Success
+    		});
+   	}
 
     // examples:
 
-    // jQuery(".banner-box-1").one("mouseenter", function(e){
-    //   wistiaLoad();
-    // });
+    jQuery(".banner-box-1").one("mouseenter", function(e){
+       wistiaLoad();
+    });
 
-    // createWaypoint('section-1', null, null, '100%', wistiaLoad, false)
+    createWaypoint('section_two', null, null, '100%', wistiaLoad, false)
     
-    
-    $('.wistia_embed').click(function () {
-        //make sure to only load if Wistia is not already loaded
-        if (typeof Wistia === 'undefined') {
-            $.getScript("https://fast.wistia.com/assets/external/E-v1.js", function (data, textStatus, jqxhr) {
-                // We got the text but, it's possible parsing could take some time on slower devices. Unfortunately, js parsing does not have
-                // a hook we can listen for. So we need to set an interval to check when it's ready 
-                var interval = setInterval(function () {
-                    if ($('.wistia_embed').attr('id') && window._wq) {
-                        var videoId = $('.wistia_embed').attr('id').split('-')[1];
-                        window._wq = window._wq || [];
-                        _wq.push({
-                            id: videoId,
-                            onReady: function (video) {
-                                $('.wistia_click_to_play').trigger('click');
-                            }
-                        });
-                        clearInterval(interval);
-                    }
-                }, 100)
-            });
-        }
-    })
 
 
 		
@@ -363,21 +344,25 @@ $('.sec_one_slider').slick({
  
  
  
- $('.sec_three_slider').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-	arrows:false,
-	dots:true,
-	fade:true,
-	responsive: [
-    {
-      breakpoint: 1175,
-      settings: {
-        adaptiveHeight: true
-      }
-    }
-	]
+ $(".sec_three_slider").slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   dots: true,
+   fade: true,
+   autoplay: true,
+   autplaySpeed: 5000,
+   responsive: [
+     {
+       breakpoint: 1175,
+       settings: {
+         adaptiveHeight: true,
+         autoplay: true,
+         autplaySpeed: 5000,
+       }
+     }
+   ]
  });
  
  
@@ -400,6 +385,24 @@ $('.sec_one_slider').slick({
  });
  
  
+ 
+ 
+ 
+ 
+ $('.our_services_boxes').slick({
+  infinite: true,
+	mobileFirst:true,
+	arrows:false,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 1265,
+      settings: "unslick"
+    }
+	]
+ });
+ 
+ 
 
 	
 
@@ -416,7 +419,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 function secotwoHover() {
     
-    if (windowWidth < 1067) {
+    if (windowWidth < 1265) {
 	    
 	    
 	    

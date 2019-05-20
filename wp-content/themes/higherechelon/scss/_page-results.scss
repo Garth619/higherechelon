@@ -22,7 +22,8 @@
 	display: flex;
 	justify-content: space-between;
 	margin:0 auto;
-	max-width:880px;
+	//max-width:880px;
+	max-width: 550px;
 	position: relative;
 	z-index:1;
 }
@@ -30,7 +31,8 @@
 
 
 .cr_dropdown {
-	flex-basis:48%;
+	//flex-basis:48%;
+	flex-basis:100%;
 	cursor: pointer;
 	position: relative;
 }
@@ -41,7 +43,7 @@
 	position: relative;
 	z-index: 1;
 	height:76px;
-	max-width:425px;
+	max-width:100%;
 	margin-lefT:auto;
 	margin-right:auto;
 	.cr_input_left {

@@ -133,6 +133,8 @@ body.page-template-template-about {
 			font-size:20px;
 			line-height: 30px;
 			margin-bottom:20px;
+			width:100%;
+			display: inline-block;
 			&:before {
 				content:"";
 				display: block;
@@ -145,7 +147,7 @@ body.page-template-template-about {
 				left:0;
 			}
 			a {
-				color:$red;
+				color:#fff;
 				transition: all 200ms ease-in-out;
 				text-decoration: none;
 				&:hover {
@@ -268,6 +270,17 @@ span.about_page_learn_title {
 } /* Media Query */
 
 
+@media screen and (max-width: 1398px) {
+	
+	
+	span.about_page_learn_title {
+    left: 0;
+	}
+	
+	
+} /* Media Query */
+
+
 
 @media screen and (max-width: 1315px) {
 	
@@ -301,7 +314,7 @@ span.about_page_learn_title {
 	
 	
 	span.about_page_learn_title {
-    left: -651px;
+    //left: -651px;
 	}
 	
 	

@@ -2,7 +2,7 @@
 	
 	<span class="adapt_title animated_title">Adapt</span><!-- animated_title -->
 	
-	<span class="lead_title animated_title">Lead</span><!-- animated_title -->
+	
 	
 	<div class="sec_four_content">
 		
@@ -22,6 +22,8 @@
 		
 	
 	</div><!-- sec_four_content -->
+	
+	<span class="lead_title animated_title">Lead</span><!-- animated_title -->
 	
 	<div id="sec_four_title_trigger" class="sec_four_logos_wrapper">
 		
