@@ -11,7 +11,7 @@
 function load_my_styles_scripts() {
   
     
-    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', '', 5, 'all' ); 
+    //wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', '', 5, 'all' ); 
     
 
     // disables jquery then registers it again to go into footer
@@ -124,7 +124,6 @@ add_action("gform_enqueue_scripts", "deregister_scripts");
  
 
 
-/*
 function internal_css_print() {
    echo '<style>';
    
@@ -135,7 +134,6 @@ function internal_css_print() {
 
 
 add_action( 'wp_head', 'internal_css_print' );
-*/
 
 
 

@@ -205,7 +205,7 @@ jQuery(document).ready(function($){
 		
 		
 		
-		createWaypoint('section_two', '#section_two', 'visible', 350, null, false);
+		createWaypoint('section_two', '#section_two', 'visible', 350, null, true);
 		
 		createWaypoint('learn_trigger', '#learn_trigger', 'visible', 450, null, true);
 		
