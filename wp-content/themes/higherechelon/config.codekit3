@@ -1022,6 +1022,14 @@
 		"oAP": "/page-templates/template-home.php",
 		"oF": 0
 		},
+	"/page-templates/template-humancapital.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-humancapital.php",
+		"oF": 0
+		},
 	"/page-templates/template-meetteam.php": {
 		"cB": 0,
 		"ft": 8192,

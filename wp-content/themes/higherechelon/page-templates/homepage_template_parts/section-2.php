@@ -1,5 +1,7 @@
 <section id="section_two">
 	
+	<span class="learn_title animated_title">Learn</span><!-- learn_title -->
+	
 	<div class="dot_vector sec_two_vector">
 		
 		<img data-src="<?php bloginfo('template_directory');?>/images/he_dot_vector_1.svg"/>
@@ -39,7 +41,7 @@
 	
 	<div id="learn_trigger" class="our_services_wrapper">
 		
-		<span class="learn_title animated_title">Learn</span><!-- learn_title -->
+		
 		
 		<div class="our_services_inner">
 			

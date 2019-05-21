@@ -1,6 +1,6 @@
 <?php 
 
-/* Template Name: Technology Services */
+/* Template Name: Human Captial Services */
 
 get_header(); ?>
 
@@ -30,7 +30,7 @@ get_header(); ?>
 		
 		<div id="about_page_top_trigger" class="about_page_top">
 			
-			<span class="about_page_learn_title_top animated_title">Learn</span><!-- animated_title -->
+			<span class="about_page_learn_title_top animated_title">Lead</span><!-- animated_title -->
 			
 			<div class="about_page_left">
 				
@@ -98,7 +98,7 @@ get_header(); ?>
 		
 		<div id="about_bottom_trigger" class="about_bottom">
 			
-			<span class="about_page_learn_title animated_title">Adapt</span><!-- animated_title -->
+			<span class="about_page_learn_title animated_title">Grow</span><!-- animated_title -->
 			
 			<div class="about_bottom_inner content">
 				
